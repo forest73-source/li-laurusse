@@ -337,3 +337,8 @@ main { flex: 1; }
   .video-box { grid-template-columns: 1fr; gap: 1.5rem; padding: 1.4rem 1rem; }
   .video-frame { margin: 0 auto; width: min(340px, 100%); }
 }
+/* Video: più piccolo */
+.video-box { max-width: 760px; margin-left: auto; margin-right: auto; padding: 1.5rem; gap: 2rem; }
+.video-frame { width: min(260px, 100%); padding: 8px; }
+.video-text h3 { font-size: clamp(2.2rem, 3.6vw, 2.8rem); }
+@media (max-width: 860px) { .video-frame { width: min(250px, 100%); } }
