@@ -342,3 +342,17 @@ main { flex: 1; }
 .video-frame { width: min(260px, 100%); padding: 8px; }
 .video-text h3 { font-size: clamp(2.2rem, 3.6vw, 2.8rem); }
 @media (max-width: 860px) { .video-frame { width: min(250px, 100%); } }
+
+/* Lingue */
+.nav { gap: 1.6rem; }
+.nav-logo { margin-right: auto; }
+.lingue { display: flex; align-items: center; gap: .35rem; font-family: var(--serif); font-size: .9rem; letter-spacing: .12em; padding-left: 1.4rem; border-left: 1px solid var(--carta-scura); }
+.lingue a { color: var(--inchiostro); text-decoration: none; opacity: .65; padding: .15rem .1rem; }
+.lingue a:hover { opacity: 1; color: var(--papavero); }
+.lingue a.attivo { opacity: 1; color: var(--rame); font-weight: 600; }
+.lingue span { color: var(--salvia); }
+@media (max-width: 860px) {
+  .nav { gap: .9rem; }
+  .lingue { order: 2; padding-left: 0; border-left: 0; font-size: .85rem; }
+  .nav-toggle { order: 3; }
+}

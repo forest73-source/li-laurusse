@@ -7,3 +7,8 @@ Sito della scrittrice Lié Larousse. Sezioni: Bio, Libri, Blog (con il canale Yo
 - `img/` – fotografie
 
 Per pubblicarlo gratis: Settings → Pages → Branch `main` / root.
+
+## Traduzioni
+Le versioni inglese (`en/`) e francese (`fr/`) si generano dalle pagine italiane con
+`python3 _strumenti/traduci.py`. Dopo ogni modifica ai testi italiani, aggiornare i
+dizionari nello script e rilanciarlo.
