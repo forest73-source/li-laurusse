@@ -305,3 +305,15 @@ main { flex: 1; }
 .seguimi-form input[type=email]:focus { outline: 2px solid var(--lavanda); outline-offset: 1px; }
 .seguimi-nota { font-family: var(--serif); font-style: italic; font-size: .95rem; color: var(--salvia); margin-top: 1rem; }
 @media (max-width: 860px) { .seguimi-card { padding: 2.2rem 1.3rem 2rem; } .seguimi-form .btn { width: 100%; max-width: 380px; } }
+
+/* Seguimi: versione compatta */
+.seguimi { padding: .5rem 6vw 3rem; }
+.seguimi-card { max-width: 500px; padding: 1.5rem 1.4rem 1.3rem; box-shadow: 0 0 0 5px var(--carta-chiara), 0 0 0 6px var(--carta-scura), 0 16px 30px -22px rgba(74,52,40,.5); }
+.seguimi-card .label { font-size: .65rem; letter-spacing: .25em; }
+.seguimi-card h2 { font-size: 2.3rem; margin: .1rem 0 .2rem; }
+.seguimi-sub { font-size: 1rem; line-height: 1.45; margin-bottom: 1rem; }
+.seguimi-form { gap: .5rem; }
+.seguimi-form input[type=email] { flex: 1 1 200px; max-width: 270px; font-size: .95rem; padding: .5rem .75rem; }
+.seguimi-form .btn { padding: .5rem 1.3rem; font-size: .85rem; }
+.seguimi-nota { font-size: .8rem; margin-top: .6rem; }
+@media (max-width: 860px) { .seguimi-card { padding: 1.4rem 1.1rem 1.2rem; } .seguimi-form .btn { max-width: 270px; } }
