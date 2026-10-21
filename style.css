@@ -279,3 +279,29 @@ main { flex: 1; }
 @media (max-width: 860px) { .copertina-foto { height: 300px; } }
 .libro .copertina:not(.copertina-foto) { height: 340px; width: 227px; aspect-ratio: auto; }
 @media (max-width: 860px) { .libro .copertina:not(.copertina-foto) { height: 300px; width: 200px; } }
+
+/* Seguimi sul blog */
+.sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+.seguimi { padding: 1rem 6vw 4.5rem; }
+.seguimi-card {
+  max-width: 760px; margin: 0 auto; text-align: center;
+  padding: 2.8rem 2.2rem 2.4rem;
+  background:
+    radial-gradient(circle at 8% 15%, rgba(217,139,166,.22), transparent 30%),
+    radial-gradient(circle at 92% 85%, rgba(138,154,110,.25), transparent 32%),
+    radial-gradient(circle at 90% 10%, rgba(156,141,184,.18), transparent 28%),
+    var(--carta-chiara);
+  border: 1px solid var(--carta-scura);
+  box-shadow: 0 0 0 8px var(--carta-chiara), 0 0 0 9px var(--carta-scura), 0 24px 44px -26px rgba(74,52,40,.55);
+}
+.seguimi-card h2 { font-size: clamp(2.8rem, 6vw, 3.8rem); margin: .2rem 0 .4rem; }
+.seguimi-sub { font-family: var(--serif); font-style: italic; font-size: 1.25rem; margin-bottom: 1.6rem; }
+.seguimi-form { display: flex; gap: .8rem; justify-content: center; flex-wrap: wrap; }
+.seguimi-form input[type=email] {
+  flex: 1 1 260px; max-width: 380px; font: inherit; font-size: 1.05rem;
+  padding: .75rem 1rem; background: var(--carta); color: var(--inchiostro);
+  border: 1px solid var(--carta-scura); border-radius: 2px;
+}
+.seguimi-form input[type=email]:focus { outline: 2px solid var(--lavanda); outline-offset: 1px; }
+.seguimi-nota { font-family: var(--serif); font-style: italic; font-size: .95rem; color: var(--salvia); margin-top: 1rem; }
+@media (max-width: 860px) { .seguimi-card { padding: 2.2rem 1.3rem 2rem; } .seguimi-form .btn { width: 100%; max-width: 380px; } }
