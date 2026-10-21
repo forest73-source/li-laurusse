@@ -196,3 +196,11 @@ blockquote {
   .section { padding: 4rem 6vw; }
   .libri, .articoli { grid-template-columns: 1fr; }
 }
+
+/* Pagine separate */
+body { min-height: 100vh; display: flex; flex-direction: column; }
+main { flex: 1; }
+.nav-links a.attivo { color: var(--rame); }
+.nav-links a.attivo::after { transform: scaleX(1); }
+.section { padding-top: 4rem; }
+@media (max-width: 860px) { .nav-links a::after { display: none; } }
