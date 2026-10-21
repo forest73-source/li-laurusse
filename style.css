@@ -272,3 +272,10 @@ main { flex: 1; }
 .youtube-rev { grid-template-columns: 1fr 1.4fr; }
 .youtube-rev .yt-thumb { object-position: center; }
 @media (max-width: 860px) { .youtube-rev { grid-template-columns: 1fr; } }
+
+/* Copertine vere */
+.copertina-foto { padding: 0; background: none; border: 0; aspect-ratio: auto; height: 340px; max-width: none; width: max-content; }
+.copertina-foto img { height: 100%; width: auto; display: block; }
+@media (max-width: 860px) { .copertina-foto { height: 300px; } }
+.libro .copertina:not(.copertina-foto) { height: 340px; width: 227px; aspect-ratio: auto; }
+@media (max-width: 860px) { .libro .copertina:not(.copertina-foto) { height: 300px; width: 200px; } }
