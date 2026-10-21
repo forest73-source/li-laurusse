@@ -269,3 +269,6 @@ main { flex: 1; }
 .youtube { margin-bottom: 2.5rem; }
 .youtube .yt-thumb { height: 340px; min-height: 0; object-fit: cover; object-position: center 45%; }
 @media (max-width: 860px) { .youtube .yt-thumb { height: 220px; } }
+.youtube-rev { grid-template-columns: 1fr 1.4fr; }
+.youtube-rev .yt-thumb { object-position: center; }
+@media (max-width: 860px) { .youtube-rev { grid-template-columns: 1fr; } }
