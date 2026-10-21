@@ -214,14 +214,14 @@ main { flex: 1; }
 .bio-hero-bg {
   position: absolute; inset: -20px;
   background: url("img/te-rose.jpg") center 40% / cover no-repeat;
-  filter: blur(2px) saturate(.9);
-  opacity: .55;
+  filter: blur(.6px);
+  opacity: .85;
 }
 .bio-hero::after {
   content: ""; position: absolute; inset: 0; pointer-events: none;
   background:
-    radial-gradient(ellipse 55% 50% at 50% 50%, rgba(250,245,234,.82), rgba(250,245,234,.35) 70%, transparent),
-    linear-gradient(180deg, var(--carta) 0%, transparent 18%, transparent 70%, var(--carta) 100%);
+    radial-gradient(ellipse 48% 52% at 50% 55%, rgba(250,245,234,.75), rgba(250,245,234,.25) 70%, transparent),
+    linear-gradient(180deg, var(--carta) 0%, transparent 10%, transparent 82%, var(--carta) 100%);
 }
 .bio-hero-text { position: relative; z-index: 1; max-width: 860px; }
 .citazione {
@@ -235,7 +235,7 @@ main { flex: 1; }
   display: block; font-family: var(--script); font-size: 6.5rem; line-height: .5;
   color: var(--oleandro); margin-bottom: .6rem;
 }
-.citazione-firma { font-size: 2.4rem; margin-top: .6rem; }
+.citazione-firma { font-size: 2.6rem; margin-top: .6rem; text-shadow: 0 0 14px rgba(250,245,234,1), 0 0 28px rgba(250,245,234,.9); }
 
 .bio-section { padding-top: 3rem; }
 .bio-section .bio { grid-template-columns: .85fr 1.15fr; align-items: start; }
