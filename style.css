@@ -249,3 +249,23 @@ main { flex: 1; }
   .bio-section .bio-photo { position: static; max-width: 380px; margin: 0 auto; }
   .bio-text p { text-align: left; }
 }
+
+/* Libri: sei titoli */
+.libri { row-gap: 4rem; }
+.copertina span small { display: block; font-family: var(--serif); font-style: italic; font-size: .95rem; margin-top: .6rem; }
+.libro h3 small { display: block; font-size: 1.05rem; font-weight: 500; font-style: italic; }
+.presto { font-family: var(--serif); font-style: italic; color: var(--lavanda); }
+.libro .btn-small { margin-top: .4rem; }
+
+/* Blog: due riquadri alternati */
+.youtube-rev .yt-thumb { order: 2; }
+.bio-text a { text-decoration: none; border-bottom: 1px solid var(--oleandro); }
+
+/* Footer social */
+.footer-social { font-family: var(--serif); letter-spacing: .08em; margin: .4rem 0 .6rem; }
+.footer-social a { text-decoration: none; color: var(--rame); }
+.footer-social a:hover { color: var(--papavero); }
+@media (max-width: 860px) { .youtube-rev .yt-thumb { order: 0; } }
+.youtube { margin-bottom: 2.5rem; }
+.youtube .yt-thumb { height: 340px; min-height: 0; object-fit: cover; object-position: center 45%; }
+@media (max-width: 860px) { .youtube .yt-thumb { height: 220px; } }
