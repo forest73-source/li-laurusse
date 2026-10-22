@@ -37,6 +37,24 @@
     <xhtml:link rel="alternate" hreflang="fr" href="https://lielarousse.it/fr/libri.html"/>
   </url>
   <url>
+    <loc>https://lielarousse.it/arte.html</loc>
+    <xhtml:link rel="alternate" hreflang="it" href="https://lielarousse.it/arte.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lielarousse.it/en/arte.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://lielarousse.it/fr/arte.html"/>
+  </url>
+  <url>
+    <loc>https://lielarousse.it/en/arte.html</loc>
+    <xhtml:link rel="alternate" hreflang="it" href="https://lielarousse.it/arte.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lielarousse.it/en/arte.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://lielarousse.it/fr/arte.html"/>
+  </url>
+  <url>
+    <loc>https://lielarousse.it/fr/arte.html</loc>
+    <xhtml:link rel="alternate" hreflang="it" href="https://lielarousse.it/arte.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lielarousse.it/en/arte.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://lielarousse.it/fr/arte.html"/>
+  </url>
+  <url>
     <loc>https://lielarousse.it/blog.html</loc>
     <xhtml:link rel="alternate" hreflang="it" href="https://lielarousse.it/blog.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://lielarousse.it/en/blog.html"/>
