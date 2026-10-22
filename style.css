@@ -495,3 +495,15 @@ main { flex: 1; }
   font-family: var(--testo); font-style: normal; font-size: 1.12rem; line-height: 1.7;
   text-align: center; margin-bottom: 1.8rem;
 }
+
+/* Bio: frase iniziale scurita del 10% (più leggibile sul telefono) */
+.citazione { color: #432F24; }
+.citazione em { color: #955129; }
+.citazione-firma { color: #955129; }
+@media (max-width: 860px) {
+  .bio-hero::after {
+    background:
+      radial-gradient(ellipse 75% 50% at 50% 52%, rgba(250,245,234,.8), rgba(250,245,234,.35) 70%, transparent),
+      linear-gradient(180deg, var(--carta) 0%, transparent 10%, transparent 82%, var(--carta) 100%);
+  }
+}
