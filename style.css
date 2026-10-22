@@ -484,3 +484,14 @@ main { flex: 1; }
 .articoli-3 .link { align-self: flex-start; }
 .ultimi-tutti { text-align: center; margin-top: 1.6rem; }
 @media (max-width: 860px) { .articoli-3 { grid-template-columns: 1fr; } }
+
+/* Contatti: testo sotto la foto */
+.contatti-text .contatti-incipit {
+  font-family: var(--serif); font-style: italic; font-weight: 500;
+  font-size: 1.6rem; line-height: 1.35; color: var(--rame);
+  text-align: center; margin: 0 0 1.1rem;
+}
+.contatti-text .contatti-invito {
+  font-family: var(--testo); font-style: normal; font-size: 1.12rem; line-height: 1.7;
+  text-align: center; margin-bottom: 1.8rem;
+}
