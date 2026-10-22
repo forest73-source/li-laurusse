@@ -379,6 +379,7 @@ def traduci(s, lang):
               'fr': {'Romanzo': 'Roman', 'Poesia': 'Poésie', 'Saggio': 'Essai'}}
     s = re.sub(r'<p class="(anno|label)">(Romanzo|Poesia|Saggio)', lambda m: '<p class="' + m.group(1) + '">' + GENERI[lang][m.group(2)], s)
     s = re.sub(r'>Acquista · (\d+),(\d+) €<', lambda m: ('>Buy · €' + m.group(1) + '.' + m.group(2) + '<') if lang == 'en' else ('>Acheter · ' + m.group(1) + ',' + m.group(2) + ' €<'), s)
+    s = s.replace('https://www.etsy.com/it/people/', 'https://www.etsy.com/people/')
     s = s.replace("</em> e all'<em>", '</em> ' + {'en': 'and ', 'fr': 'et à l’'}[lang] + '<em>')
     s = s.replace('<html lang="it">', f'<html lang="{lang}">')
     # percorsi verso i file condivisi

@@ -659,3 +659,5 @@ a.link-nome:hover { color: var(--papavero); border-bottom-color: var(--papavero)
 .btn-esaurito { background: transparent !important; color: var(--salvia) !important; box-shadow: inset 0 0 0 1px var(--carta-scura) !important; cursor: default; font-style: italic; }
 .btn-esaurito:hover { background: transparent !important; }
 dialog.trama:focus, dialog.trama:focus-visible { outline: none; }
+/* Voce Shop (Etsy) nel menu */
+.nav-esterno { font-size: .75em; margin-left: .25em; color: var(--oleandro); letter-spacing: 0; }
