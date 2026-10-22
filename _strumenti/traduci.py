@@ -141,6 +141,9 @@ def traduci(s, lang):
     s = s.replace('>Leggi →<', '>' + {'en': 'Read →', 'fr': 'Lire →'}[lang] + '<')
     s = s.replace('placeholder="La tua email"', f'placeholder="{PLACEHOLDER[lang]}"')
     s = s.replace('</em></a> e <a', f'</em></a> {CONGIUNZIONE[lang]} <a').replace('</em> e <em>', f'</em> {CONGIUNZIONE[lang]} <em>')
+    GENERI = {'en': {'Romanzo': 'Novel', 'Poesia': 'Poetry', 'Saggio': 'Essay'},
+              'fr': {'Romanzo': 'Roman', 'Poesia': 'Poésie', 'Saggio': 'Essai'}}
+    s = re.sub(r'<p class="anno">(Romanzo|Poesia|Saggio)', lambda m: '<p class="anno">' + GENERI[lang][m.group(1)], s)
     s = s.replace("</em> e all'<em>", '</em> ' + {'en': 'and ', 'fr': 'et à l’'}[lang] + '<em>')
     s = s.replace('<html lang="it">', f'<html lang="{lang}">')
     # percorsi verso i file condivisi
