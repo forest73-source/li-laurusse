@@ -390,3 +390,42 @@ main { flex: 1; }
   .lingue { padding-left: 0; border-left: 0; }
   .lingue summary { font-size: .85rem; padding: .3rem .55rem; }
 }
+
+/* Copertine: effetto libro 3D al passaggio del mouse */
+.libro { perspective: 1100px; }
+.libro .copertina {
+  position: relative; transform-style: preserve-3d;
+  transform-origin: center center;
+  transition: transform .7s cubic-bezier(.2,.8,.2,1), box-shadow .7s;
+}
+/* spessore delle pagine (lato destro) */
+.libro .copertina::before {
+  content: ""; position: absolute; top: 1.5%; left: 100%;
+  width: 26px; height: 97%;
+  transform-origin: left center; transform: rotateY(90deg);
+  background: repeating-linear-gradient(90deg, #fbf6ea 0 1px, #e9dcc4 1px 2px), #f5ecd9;
+  box-shadow: inset 0 0 6px rgba(74,52,40,.25);
+  backface-visibility: hidden;
+}
+/* nastrino segnalibro */
+.libro .copertina::after {
+  content: ""; position: absolute; top: -2px; right: 16%;
+  width: 15px; height: 0;
+  background: linear-gradient(90deg, #a8352c, var(--papavero) 45%, #a8352c);
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 82%, 0 100%);
+  transform: translateZ(2px);
+  transition: height .55s .12s cubic-bezier(.3,1.4,.5,1);
+  box-shadow: 0 2px 4px rgba(0,0,0,.2);
+}
+.libro:hover .copertina, .libro:focus-within .copertina {
+  transform: translateY(-10px) rotateY(-26deg) rotateX(3deg);
+  box-shadow: -18px 26px 34px -14px rgba(74,52,40,.55);
+}
+.libro:hover .copertina::after, .libro:focus-within .copertina::after { height: 74px; }
+.libro .copertina-foto img { transition: filter .7s; }
+.libro:hover .copertina-foto img { filter: brightness(1.04) saturate(1.05); }
+@media (prefers-reduced-motion: reduce) {
+  .libro .copertina, .libro .copertina::after { transition: none; }
+}
+.libro .copertina::before { width: 34px; }
+.libro .copertina::after { right: 7%; width: 13px; }
