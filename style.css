@@ -572,3 +572,13 @@ dialog.trama[open] { animation: foglio .45s cubic-bezier(.2,.8,.2,1); }
 /* Nome con collegamento (es. Francesca Cortona) */
 a.link-nome { color: var(--rame); text-decoration: none; border-bottom: 1px solid var(--oleandro); transition: color .25s, border-color .25s; }
 a.link-nome:hover { color: var(--papavero); border-bottom-color: var(--papavero); }
+
+/* Blog: blocco del blog con testo a sinistra e immagine a destra, YouTube al contrario */
+.youtube:not(.youtube-rev) { grid-template-columns: 1fr 1.4fr; }
+.youtube:not(.youtube-rev) .yt-thumb { order: 2; }
+.youtube.youtube-rev { grid-template-columns: 1.4fr 1fr; }
+.youtube.youtube-rev .yt-thumb { order: 0; }
+@media (max-width: 860px) {
+  .youtube:not(.youtube-rev), .youtube.youtube-rev { grid-template-columns: 1fr; }
+  .youtube:not(.youtube-rev) .yt-thumb { order: 0; }
+}
