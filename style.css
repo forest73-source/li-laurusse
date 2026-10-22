@@ -461,3 +461,12 @@ main { flex: 1; }
 @media (prefers-reduced-motion: reduce) { .petali { display: none; } }
 @keyframes gira { 0% { transform: rotate(0deg) scaleX(1); } 50% { transform: rotate(180deg) scaleX(.65); } 100% { transform: rotate(360deg) scaleX(1); } }
 .petalo { width: calc(var(--s) * 1.15); height: calc(var(--s) * .9); }
+
+/* Apparizione dolce allo scorrimento */
+.anima :is(.section-head, .bio-photo, .bio-text > *, .libro, .youtube, .video-box, .contatti-text > *, .form, .seguimi-card) {
+  opacity: 0; translate: 0 26px; filter: blur(2px);
+  transition: opacity 1s ease var(--ritardo-in, 0s), translate 1s cubic-bezier(.2,.8,.2,1) var(--ritardo-in, 0s), filter 1s ease var(--ritardo-in, 0s);
+}
+.anima :is(.section-head, .bio-photo, .bio-text > *, .libro, .youtube, .video-box, .contatti-text > *, .form, .seguimi-card).visto {
+  opacity: 1; translate: 0 0; filter: none;
+}

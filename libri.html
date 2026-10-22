@@ -8,7 +8,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=EB+Garamond:ital,wght@0,400;0,500;1,400&family=Great+Vibes&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css?v=20261022e">
+<link rel="stylesheet" href="style.css?v=20261022f">
 </head>
 <body>
 
@@ -125,6 +125,20 @@
 </footer>
 
 <script>
+  (function () {
+    if (!('IntersectionObserver' in window) || matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+    const sel = '.section-head, .bio-photo, .bio-text > *, .libro, .youtube, .video-box, .contatti-text > *, .form, .seguimi-card';
+    const els = document.querySelectorAll(sel);
+    document.documentElement.classList.add('anima');
+    const io = new IntersectionObserver(voci => {
+      voci.forEach(v => { if (v.isIntersecting) { v.target.classList.add('visto'); io.unobserve(v.target); } });
+    }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+    els.forEach((el, i) => {
+      const fratelli = [...el.parentElement.children].filter(c => c.matches(sel));
+      el.style.setProperty('--ritardo-in', (fratelli.indexOf(el) % 3) * 0.12 + 's');
+      io.observe(el);
+    });
+  })();
   const lg = document.querySelector('.lingue');
   if (lg) document.addEventListener('click', e => { if (!lg.contains(e.target)) lg.removeAttribute('open'); });
   const t = document.querySelector('.nav-toggle'), l = document.querySelector('.nav-links');
