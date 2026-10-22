@@ -529,3 +529,39 @@ main { flex: 1; }
   .libro-evidenza { grid-template-columns: 1fr; gap: 1.8rem; padding: 1.8rem 1.3rem 2rem; }
   .libro-evidenza .copertina-foto { position: static; width: min(260px, 80%); margin: 0 auto; }
 }
+
+/* Libri: pulsanti e finestra della trama */
+.libro-azioni { display: flex; flex-wrap: wrap; gap: .6rem; justify-content: center; margin-top: .5rem; }
+.btn-chiaro { background: transparent; color: var(--rame); box-shadow: inset 0 0 0 1px var(--rame); }
+.btn-chiaro:hover { background: var(--rame); color: var(--carta-chiara); }
+
+dialog.trama {
+  width: min(760px, calc(100vw - 32px)); max-height: calc(100vh - 48px);
+  margin: auto; padding: 0; border: 1px solid var(--carta-scura);
+  background: var(--carta-chiara); color: var(--inchiostro);
+  box-shadow: 0 0 0 8px var(--carta-chiara), 0 0 0 9px var(--carta-scura), 0 30px 60px -20px rgba(74,52,40,.6);
+  overflow-y: auto; overscroll-behavior: contain;
+}
+dialog.trama::backdrop { background: rgba(74,52,40,.45); backdrop-filter: blur(3px); }
+dialog.trama[open] { animation: foglio .45s cubic-bezier(.2,.8,.2,1); }
+@keyframes foglio { from { opacity: 0; transform: translateY(24px) scale(.98); } to { opacity: 1; transform: none; } }
+.trama-chiudi {
+  position: sticky; top: 0; float: right; margin: .6rem .6rem 0 0; z-index: 2;
+  width: 2.4rem; height: 2.4rem; border-radius: 50%; border: 1px solid var(--carta-scura);
+  background: var(--carta-chiara); color: var(--rame); font-size: 1.6rem; line-height: 1; cursor: pointer;
+}
+.trama-chiudi:hover { color: var(--papavero); border-color: var(--oleandro); }
+.trama-corpo { padding: 2.4rem 2.8rem 2.6rem; }
+.trama-copertina { float: left; width: 150px; margin: .3rem 1.6rem 1rem 0; box-shadow: 0 14px 26px -14px rgba(74,52,40,.6); }
+.trama-corpo h3 { font-family: var(--serif); font-size: clamp(1.8rem, 3vw, 2.3rem); font-weight: 600; line-height: 1.1; margin: .3rem 0 .4rem; }
+.trama-corpo h3 small { display: block; font-size: .58em; font-weight: 500; font-style: italic; color: var(--rame); margin-top: .35rem; }
+.trama-corpo > p { margin-bottom: 1rem; }
+.trama-corpo .evidenza-sotto { font-family: var(--serif); font-style: italic; color: var(--salvia); margin-bottom: 1.3rem; }
+.trama-corpo .evidenza-gancio { clear: both; font-family: var(--serif); font-style: italic; font-size: 1.4rem; line-height: 1.35; color: var(--rame); border-left: 2px solid var(--oleandro); padding-left: 1rem; margin: 1.2rem 0 1.2rem; }
+.trama-corpo .evidenza-viaggio { font-family: var(--serif); font-style: italic; font-size: 1.2rem; }
+.trama-corpo h4 { font-size: 2.1rem; margin: 1.1rem 0 .4rem; }
+.trama-corpo .btn { margin-top: .3rem; }
+@media (max-width: 600px) {
+  .trama-corpo { padding: 1.4rem 1.2rem 1.8rem; }
+  .trama-copertina { width: 100px; margin-right: 1rem; }
+}

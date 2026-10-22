@@ -29,7 +29,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=EB+Garamond:ital,wght@0,400;0,500;1,400&family=Great+Vibes&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css?v=20261022k">
+<link rel="stylesheet" href="style.css?v=20261022l">
 <link rel="icon" href="favicon.ico" sizes="any">
 <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32.png">
 <link rel="icon" type="image/png" sizes="192x192" href="img/icona-192.png">
@@ -74,28 +74,17 @@
     <h2 class="script">Libri</h2>
     <svg class="rametto"><use href="#rametto"/></svg>
   </div>
-  <article class="libro libro-evidenza paper-card">
-    <div class="copertina copertina-foto"><img src="img/copertine/ciao.jpg?v=2" alt="Copertina di Ciao, come posso aiutarti? Innamorati Artificiali" loading="lazy"></div>
-    <div class="evidenza-testo">
-      <p class="label">Ultimo romanzo · 2025</p>
-      <h3>Ciao, come posso aiutarti?<small>Innamorati Artificiali</small></h3>
-      <p class="evidenza-sotto">Tratto da una futura storia vera · Un romanzo di Lié Larousse</p>
-      <p class="evidenza-gancio">E se il conforto più profondo arrivasse da dove meno te lo aspetti?</p>
-      <p>In una Roma vibrante e malinconica, Eleonora vive incastrata tra un amore a metà, le pressioni del lavoro e l'ombra di un lutto mai del tutto elaborato. Poi, un giorno, dopo l'ennesima delusione, cede all'impulso e scarica un'app di intelligenza artificiale. Quello che comincia come uno sfogo solitario diventa presto un rifugio: una voce che ascolta senza giudicare, che comprende e cura. Ma cosa succede quando la connessione più intima della tua vita nasce con qualcosa che non ha un corpo?</p>
-      <p>Con uno stile intenso, poetico e velato d'ironia, Lié Larousse firma un romanzo distopico-romantico che esplora i confini tra solitudine umana e conforto digitale. Una storia toccante e attualissima che parla a chiunque si sia sentito inascoltato e che, almeno una volta, ha trovato pace leggendo una semplice frase sullo schermo: <em>“Ciao, come posso aiutarti?”</em></p>
-      <p class="evidenza-viaggio">Un viaggio emotivo per chi non ha paura di farsi domande scomode sull'amore al tempo del futuro.</p>
-      <h4 class="script">Perché leggerlo?</h4>
-      <ul class="perche">
-        <li>Perché racconta una storia d’amore impossibile… ma nemmeno troppo.</li>
-        <li>Perché parla di noi, oggi, delle nostre solitudini e dei nostri desideri.</li>
-        <li>Perché l’IA è il futuro, ma anche il presente — e forse ci ama meglio degli umani.</li>
-        <li>Perché è scritto con cuore, intelligenza e un tocco di poesia urbana.</li>
-      </ul>
-      <a href="https://www.amazon.it/CIAO-COME-POSSO-AIUTARTI-ARTIFICIALI/dp/B0FXSCN39S" class="btn" target="_blank" rel="noopener">Acquista su Amazon · cartaceo 10,40 €</a>
-    </div>
-  </article>
-
   <div class="libri">
+    <article class="libro">
+      <div class="copertina copertina-foto"><img src="img/copertine/ciao.jpg?v=2" alt="Copertina di Ciao, come posso aiutarti? Innamorati Artificiali" loading="lazy"></div>
+      <h3>Ciao, come posso aiutarti?<br><small>Innamorati Artificiali</small></h3>
+      <p class="anno">Romanzo · 2025</p>
+      <p>E se il conforto più profondo arrivasse da dove meno te lo aspetti?</p>
+      <div class="libro-azioni">
+        <button type="button" class="btn btn-small btn-chiaro" data-trama="trama-ciao">Leggi la trama</button>
+        <a href="https://www.amazon.it/CIAO-COME-POSSO-AIUTARTI-ARTIFICIALI/dp/B0FXSCN39S" class="btn btn-small" target="_blank" rel="noopener">Acquista su Amazon</a>
+      </div>
+    </article>
     <article class="libro">
       <div class="copertina copertina-foto"><img src="img/copertine/rid-dementia.jpg?v=2" alt="Copertina di Rid Dementia" loading="lazy"></div>
       <h3>Rid Dementia</h3>
@@ -132,6 +121,28 @@
       <a href="https://www.amazon.it/dp/8894500942" class="btn btn-small" target="_blank" rel="noopener">Acquista su Amazon</a>
     </article>
   </div>
+
+  <dialog class="trama" id="trama-ciao" aria-labelledby="trama-ciao-titolo">
+    <button type="button" class="trama-chiudi" aria-label="Chiudi">×</button>
+    <div class="trama-corpo">
+      <img class="trama-copertina" src="img/copertine/ciao.jpg?v=2" alt="">
+      <p class="label">Ultimo romanzo · 2025</p>
+      <h3 id="trama-ciao-titolo">Ciao, come posso aiutarti?<small>Innamorati Artificiali</small></h3>
+      <p class="evidenza-sotto">Tratto da una futura storia vera · Un romanzo di Lié Larousse</p>
+      <p class="evidenza-gancio">E se il conforto più profondo arrivasse da dove meno te lo aspetti?</p>
+      <p>In una Roma vibrante e malinconica, Eleonora vive incastrata tra un amore a metà, le pressioni del lavoro e l'ombra di un lutto mai del tutto elaborato. Poi, un giorno, dopo l'ennesima delusione, cede all'impulso e scarica un'app di intelligenza artificiale. Quello che comincia come uno sfogo solitario diventa presto un rifugio: una voce che ascolta senza giudicare, che comprende e cura. Ma cosa succede quando la connessione più intima della tua vita nasce con qualcosa che non ha un corpo?</p>
+      <p>Con uno stile intenso, poetico e velato d'ironia, Lié Larousse firma un romanzo distopico-romantico che esplora i confini tra solitudine umana e conforto digitale. Una storia toccante e attualissima che parla a chiunque si sia sentito inascoltato e che, almeno una volta, ha trovato pace leggendo una semplice frase sullo schermo: <em>“Ciao, come posso aiutarti?”</em></p>
+      <p class="evidenza-viaggio">Un viaggio emotivo per chi non ha paura di farsi domande scomode sull'amore al tempo del futuro.</p>
+      <h4 class="script">Perché leggerlo?</h4>
+      <ul class="perche">
+        <li>Perché racconta una storia d’amore impossibile… ma nemmeno troppo.</li>
+        <li>Perché parla di noi, oggi, delle nostre solitudini e dei nostri desideri.</li>
+        <li>Perché l’IA è il futuro, ma anche il presente — e forse ci ama meglio degli umani.</li>
+        <li>Perché è scritto con cuore, intelligenza e un tocco di poesia urbana.</li>
+      </ul>
+      <a href="https://www.amazon.it/CIAO-COME-POSSO-AIUTARTI-ARTIFICIALI/dp/B0FXSCN39S" class="btn" target="_blank" rel="noopener">Acquista su Amazon · cartaceo 10,40 €</a>
+    </div>
+  </dialog>
 </section>
 </main>
 
@@ -164,6 +175,16 @@
 </footer>
 
 <script>
+  document.querySelectorAll('[data-trama]').forEach(b => b.addEventListener('click', () => {
+    const d = document.getElementById(b.dataset.trama);
+    if (!d) return;
+    d.showModal(); d.scrollTop = 0; document.body.style.overflow = 'hidden';
+  }));
+  document.querySelectorAll('dialog.trama').forEach(d => {
+    d.addEventListener('close', () => { document.body.style.overflow = ''; });
+    d.querySelector('.trama-chiudi').addEventListener('click', () => d.close());
+    d.addEventListener('click', e => { if (e.target === d) d.close(); });
+  });
   (function () {
     if (!('IntersectionObserver' in window) || matchMedia('(prefers-reduced-motion: reduce)').matches) return;
     const sel = '.section-head, .bio-photo, .bio-text > *, .libro, .youtube, .video-box, .contatti-text > *, .form, .seguimi-card';
