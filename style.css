@@ -429,3 +429,6 @@ main { flex: 1; }
 }
 .libro .copertina::before { width: 34px; }
 .libro .copertina::after { right: 7%; width: 13px; }
+/* Bio: foto ferma, niente effetto "segue lo scorrimento" */
+.bio-section .bio-photo { position: static; top: auto; }
+.bio-section .bio { align-items: center; }
