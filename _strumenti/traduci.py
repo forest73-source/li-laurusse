@@ -135,7 +135,7 @@ def traduci(s, lang):
     s = s.replace('<html lang="it">', f'<html lang="{lang}">')
     # percorsi verso i file condivisi
     s = re.sub(r'href="style\.css', 'href="../style.css', s)
-    s = s.replace('src="img/', 'src="../img/')
+    s = s.replace('src="img/', 'src="../img/').replace('href="img/', 'href="../img/').replace('href="favicon.ico"', 'href="../favicon.ico"')
     return s
 
 
