@@ -568,3 +568,7 @@ dialog.trama[open] { animation: foglio .45s cubic-bezier(.2,.8,.2,1); }
 .trama-corpo .recensione { border: 0; margin: 1.4rem 0; padding: 1.1rem 1.3rem; background: rgba(217,139,166,.09); border-left: 2px solid var(--oleandro); font-family: var(--serif); font-style: italic; font-size: 1.15rem; line-height: 1.5; }
 .trama-corpo .recensione cite { display: block; margin-top: .5rem; font-style: normal; font-size: .9rem; letter-spacing: .08em; color: var(--salvia); }
 .trama-corpo .perche strong { color: var(--rame); font-weight: 600; }
+
+/* Nome con collegamento (es. Francesca Cortona) */
+a.link-nome { color: var(--rame); text-decoration: none; border-bottom: 1px solid var(--oleandro); transition: color .25s, border-color .25s; }
+a.link-nome:hover { color: var(--papavero); border-bottom-color: var(--papavero); }

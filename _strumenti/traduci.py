@@ -356,14 +356,23 @@ def sitemap():
     open('sitemap.xml', 'w', encoding='utf-8').write(xml)
 
 
+def collega(s):
+    """Il nome di Francesca Cortona porta al suo sito."""
+    link = '<a href="https://cortonafrancesca.it/" class="link-nome" target="_blank" rel="noopener">Francesca Cortona</a>'
+    s = s.replace(link, 'Francesca Cortona')
+    corpo_inizio = s.index('<body>')
+    return s[:corpo_inizio] + s[corpo_inizio:].replace('Francesca Cortona', link)
+
+
 for pagina in PAGINE:
     it = open(pagina, encoding='utf-8').read()
     it = metti_switcher(it, 'it', pagina)
-    it = seo(it, 'it', pagina)
+    it = collega(seo(it, 'it', pagina))
     open(pagina, 'w', encoding='utf-8').write(it)
     for lang in ['en', 'fr']:
         os.makedirs(lang, exist_ok=True)
-        out = seo(metti_switcher(traduci(it, lang), lang, pagina), lang, pagina)
+        out = collega(seo(metti_switcher(traduci(collega(it).replace(
+            '<a href="https://cortonafrancesca.it/" class="link-nome" target="_blank" rel="noopener">Francesca Cortona</a>', 'Francesca Cortona'), lang), lang, pagina), lang, pagina))
         open(f'{lang}/{pagina}', 'w', encoding='utf-8').write(out)
 sitemap()
 print('fatto')
