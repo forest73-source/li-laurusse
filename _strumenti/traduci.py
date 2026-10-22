@@ -10,8 +10,8 @@ LUNGHE = {
   'Lié Larousse, scrittrice. Libri, racconti dal giardino e Libroarbitrio, il tempo di un tè con Lié.': 'Lié Larousse, writer. Books, stories from the garden and Libroarbitrio, tea time with Lié.',
   'Ci sono luoghi dentro di noi in cui il tempo': 'There are places within us where time',
   'per fare spazio alla': 'to make room for',
-  'Lié Larousse abita esattamente lì, tra i ritmi della terra, la magia delle piccole cose e la profondità dei legami invisibili. Scrittrice di romanzi e racconti, poetessa, professionista e ricercatrice nei campi della psicologia e della botanica, Lié coltiva dal 2013 il suo spazio digitale':
-   'Lié Larousse lives exactly there, among the rhythms of the earth, the magic of small things and the depth of invisible bonds. A novelist and short-story writer, a poet, a practitioner and researcher in psychology and botany, since 2013 Lié has nurtured her digital space',
+  'Lié Larousse abita esattamente lì, tra i ritmi della terra, la magia delle piccole cose e la profondità dei legami invisibili. Scrittrice di romanzi e racconti, poetessa, professionista e ricercatrice nei campi della psicologia e della botanica, Lié coltiva dal 2012 il suo spazio digitale':
+   'Lié Larousse lives exactly there, among the rhythms of the earth, the magic of small things and the depth of invisible bonds. A novelist and short-story writer, a poet, a practitioner and researcher in psychology and botany, since 2012 Lié has nurtured her digital space',
   ', blog di riferimento letterario e culturale a livello internazionale.': ', an internationally recognised literary and cultural blog.',
   "Il suo impegno letterario va dalla poesia, che indaga l'anima, con le raccolte": 'Her literary work ranges from poetry, which explores the soul, with the collections',
   ', alla narrativa, che esplora le stanze segrete della mente, con i romanzi': ', to fiction, which explores the secret rooms of the mind, with the novels',
@@ -38,8 +38,8 @@ LUNGHE = {
   'Lié Larousse, scrittrice. Libri, racconti dal giardino e Libroarbitrio, il tempo di un tè con Lié.': 'Lié Larousse, écrivaine. Livres, récits du jardin et Libroarbitrio, le temps d’un thé avec Lié.',
   'Ci sono luoghi dentro di noi in cui il tempo': 'Il existe des lieux en nous où le temps',
   'per fare spazio alla': 'pour faire place à la',
-  'Lié Larousse abita esattamente lì, tra i ritmi della terra, la magia delle piccole cose e la profondità dei legami invisibili. Scrittrice di romanzi e racconti, poetessa, professionista e ricercatrice nei campi della psicologia e della botanica, Lié coltiva dal 2013 il suo spazio digitale':
-   'Lié Larousse habite exactement là, entre les rythmes de la terre, la magie des petites choses et la profondeur des liens invisibles. Romancière et nouvelliste, poétesse, professionnelle et chercheuse dans les domaines de la psychologie et de la botanique, Lié cultive depuis 2013 son espace numérique',
+  'Lié Larousse abita esattamente lì, tra i ritmi della terra, la magia delle piccole cose e la profondità dei legami invisibili. Scrittrice di romanzi e racconti, poetessa, professionista e ricercatrice nei campi della psicologia e della botanica, Lié coltiva dal 2012 il suo spazio digitale':
+   'Lié Larousse habite exactement là, entre les rythmes de la terre, la magie des petites choses et la profondeur des liens invisibles. Romancière et nouvelliste, poétesse, professionnelle et chercheuse dans les domaines de la psychologie et de la botanique, Lié cultive depuis 2012 son espace numérique',
   ', blog di riferimento letterario e culturale a livello internazionale.': ', un blog littéraire et culturel de référence à l’international.',
   "Il suo impegno letterario va dalla poesia, che indaga l'anima, con le raccolte": 'Son œuvre littéraire va de la poésie, qui sonde l’âme, avec les recueils',
   ', alla narrativa, che esplora le stanze segrete della mente, con i romanzi': ', à la fiction, qui explore les chambres secrètes de l’esprit, avec les romans',
@@ -77,7 +77,7 @@ BREVI = {
   'Romanzo · Casa Sanremo Writers 2024': 'Novel · Casa Sanremo Writers 2024',
   'Poesia · Miraggi Edizioni': 'Poetry · Miraggi Edizioni', 'Poesia · Bestseller Books': 'Poetry · Bestseller Books',
   'Poesia': 'Poetry', 'Raccolta di poesie.': 'Poetry collection.',
-  'Il blog · dal 2013': 'The blog · since 2013', 'Leggi il blog ▸': 'Read the blog ▸',
+  'Il blog · dal 2012': 'The blog · since 2012', 'Leggi il blog ▸': 'Read the blog ▸',
   'Il mio canale YouTube': 'My YouTube channel', 'Guarda i video ▸': 'Watch the videos ▸',
   'Dal mio canale YouTube': 'From my YouTube channel', 'Tutti i video ▸': 'All videos ▸',
   'Nome': 'Name', 'Messaggio': 'Message', 'Invia': 'Send',
@@ -96,7 +96,7 @@ BREVI = {
   'Romanzo · Casa Sanremo Writers 2024': 'Roman · Casa Sanremo Writers 2024',
   'Poesia · Miraggi Edizioni': 'Poésie · Miraggi Edizioni', 'Poesia · Bestseller Books': 'Poésie · Bestseller Books',
   'Poesia': 'Poésie', 'Raccolta di poesie.': 'Recueil de poèmes.',
-  'Il blog · dal 2013': 'Le blog · depuis 2013', 'Leggi il blog ▸': 'Lire le blog ▸',
+  'Il blog · dal 2012': 'Le blog · depuis 2012', 'Leggi il blog ▸': 'Lire le blog ▸',
   'Il mio canale YouTube': 'Ma chaîne YouTube', 'Guarda i video ▸': 'Voir les vidéos ▸',
   'Dal mio canale YouTube': 'Sur ma chaîne YouTube', 'Tutti i video ▸': 'Toutes les vidéos ▸',
   'Nome': 'Nom', 'Messaggio': 'Message', 'Invia': 'Envoyer', 'Email': 'E-mail',
