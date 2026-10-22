@@ -29,7 +29,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=EB+Garamond:ital,wght@0,400;0,500;1,400&family=Great+Vibes&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="../style.css?v=20261022u">
+<link rel="stylesheet" href="../style.css?v=20261022v">
 <link rel="icon" href="../favicon.ico" sizes="any">
 <link rel="icon" type="image/png" sizes="48x48" href="../img/favicon-48.png?v=2">
 <link rel="icon" type="image/png" sizes="96x96" href="../img/favicon-96.png?v=2">
@@ -113,7 +113,10 @@
       <h3>.Lié.</h3>
       <p class="anno">Poetry · Miraggi Edizioni · 2017</p>
       <p>Poetry collection.</p>
-      <button type="button" class="btn btn-small" data-acquista data-titolo=".Lié." data-prezzo="13.00" data-copertina="../img/copertine/lie.jpg?v=2">Buy</button>
+      <div class="libro-azioni">
+        <button type="button" class="btn btn-small btn-chiaro" data-trama="trama-lie">Read the plot</button>
+        <span class="btn btn-small btn-esaurito" aria-disabled="true">Not available</span>
+      </div>
     </article>
     <article class="libro">
       <div class="copertina copertina-foto"><img src="../img/copertine/la-vita-comunque.jpg?v=2" alt="Cover of .la vita comunque." loading="lazy"></div>
@@ -228,6 +231,20 @@
         <li><strong>A profound theme:</strong> A moving reflection on memory, time and the bonds that remain.</li>
       </ul>
       <button type="button" class="btn" data-acquista data-titolo=".Dopo di noi." data-prezzo="13.00" data-copertina="../img/copertine/dopo-di-noi.jpg?v=2">Buy · €13.00</button>
+    </div>
+  </dialog>
+
+  <dialog class="trama" id="trama-lie" aria-labelledby="trama-lie-titolo">
+    <button type="button" class="trama-chiudi" aria-label="Close">×</button>
+    <div class="trama-corpo">
+      <img class="trama-copertina" src="../img/copertine/lie.jpg?v=2" alt="">
+      <p class="label">Poetry · Miraggi Edizioni · 2017</p>
+      <h3 id="trama-lie-titolo">.Lié.</h3>
+      <p class="evidenza-sotto">Poems by Lié Larousse · Debut work</p>
+      <p class="evidenza-gancio">An intensely intimate and rhythmic collection of poems.</p>
+      <p><em>.Lié.</em> is a debut literary work that bears its author’s name, an intensely intimate and rhythmic collection of poems. Between wordplay, musicality and vision, the written word becomes performance: a journey through the folds of the soul, its vulnerabilities and everyday enchantment.</p>
+      <p class="evidenza-viaggio">A book that seduces and resonates like a song both ancient and contemporary.</p>
+      <span class="btn btn-esaurito" aria-disabled="true">Not available</span>
     </div>
   </dialog>
 
