@@ -507,3 +507,25 @@ main { flex: 1; }
       linear-gradient(180deg, var(--carta) 0%, transparent 10%, transparent 82%, var(--carta) 100%);
   }
 }
+
+/* Libro in evidenza */
+.libro-evidenza {
+  display: grid; grid-template-columns: 300px 1fr; gap: 3.5rem; align-items: start;
+  text-align: left; padding: 3rem 3rem 2.8rem; margin: 0 auto 4.5rem; max-width: 1080px;
+}
+.libro-evidenza .copertina-foto { height: auto; width: 100%; margin: .4rem 0 0; position: sticky; top: 110px; }
+.libro-evidenza .copertina-foto img { width: 100%; height: auto; }
+.evidenza-testo h3 { font-family: var(--serif); font-size: clamp(2rem, 3.4vw, 2.7rem); font-weight: 600; line-height: 1.1; margin: .3rem 0 .4rem; }
+.evidenza-testo h3 small { display: block; font-size: .55em; font-weight: 500; font-style: italic; color: var(--rame); margin-top: .35rem; letter-spacing: .02em; }
+.evidenza-sotto { font-family: var(--serif); font-style: italic; color: var(--salvia); margin-bottom: 1.4rem; }
+.evidenza-gancio { font-family: var(--serif); font-style: italic; font-size: 1.45rem; line-height: 1.35; color: var(--rame); border-left: 2px solid var(--oleandro); padding-left: 1rem; margin-bottom: 1.3rem; }
+.evidenza-testo > p { margin-bottom: 1rem; }
+.evidenza-viaggio { font-family: var(--serif); font-style: italic; font-size: 1.2rem; }
+.evidenza-testo h4 { font-size: 2.2rem; margin: 1.2rem 0 .5rem; }
+.perche { list-style: none; margin: 0 0 1.8rem; }
+.perche li { position: relative; padding: .35rem 0 .35rem 1.7rem; border-bottom: 1px dashed var(--carta-scura); }
+.perche li::before { content: "❀"; position: absolute; left: 0; top: .35rem; color: var(--oleandro); }
+@media (max-width: 860px) {
+  .libro-evidenza { grid-template-columns: 1fr; gap: 1.8rem; padding: 1.8rem 1.3rem 2rem; }
+  .libro-evidenza .copertina-foto { position: static; width: min(260px, 80%); margin: 0 auto; }
+}
