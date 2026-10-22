@@ -290,7 +290,8 @@ PERSONA = {
  "url": BASE, "image": BASE + "img/lie-ritratto-bio.jpg", "email": "mailto:lielarousse@yahoo.it",
  "jobTitle": "Scrittrice e poetessa",
  "sameAs": ["https://www.instagram.com/lielarousse/", "https://www.facebook.com/lie.larousse/",
-            "https://www.youtube.com/@Libroarbitrio", "https://libroarbitrio.wordpress.com/"]
+            "https://www.youtube.com/@Libroarbitrio", "https://libroarbitrio.wordpress.com/"],
+ "sibling": {"@type": "Person", "name": "Francesca Cortona", "url": "https://cortonafrancesca.it/", "jobTitle": "Pittrice"}
 }
 
 
