@@ -328,7 +328,18 @@ def seo(s, lang, pagina):
         f'<meta name="twitter:image" content="{BASE}img/condivisione.jpg">',
     ]
     if pagina == 'index.html':
-        righe.append('<script type="application/ld+json">' + json.dumps(PERSONA, ensure_ascii=False) + '</script>')
+        foto = BASE + 'img/lie-ritratto-bio.jpg'
+        righe.append(f'<meta name="thumbnail" content="{foto}">')
+        pagina_web = {
+            "@context": "https://schema.org", "@type": "ProfilePage",
+            "name": titolo, "url": url_pagina(lang, pagina), "inLanguage": lang,
+            "primaryImageOfPage": {"@type": "ImageObject", "url": foto, "width": 720, "height": 888},
+            "image": foto,
+            "mainEntity": PERSONA,
+        }
+        righe.append('<script type="application/ld+json">' + json.dumps(pagina_web, ensure_ascii=False) + '</script>')
+        sito = {"@context": "https://schema.org", "@type": "WebSite", "name": "Lié Larousse", "url": BASE}
+        righe.append('<script type="application/ld+json">' + json.dumps(sito, ensure_ascii=False) + '</script>')
     righe.append('<!-- /seo -->')
     return s.replace('</title>\n', '</title>\n' + '\n'.join(righe) + '\n', 1)
 
