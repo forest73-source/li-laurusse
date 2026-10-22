@@ -29,7 +29,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=EB+Garamond:ital,wght@0,400;0,500;1,400&family=Great+Vibes&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="../style.css?v=20261022r">
+<link rel="stylesheet" href="../style.css?v=20261022s">
 <link rel="icon" href="../favicon.ico" sizes="any">
 <link rel="icon" type="image/png" sizes="48x48" href="../img/favicon-48.png?v=2">
 <link rel="icon" type="image/png" sizes="96x96" href="../img/favicon-96.png?v=2">
@@ -108,7 +108,7 @@
         <button type="button" class="btn btn-small" data-acquista data-titolo="NATO SOLO" data-prezzo="16.00" data-copertina="../img/copertine/nato-solo.jpg?v=2">Acheter</button>
       </div>
     </article>
-    <article class="libro">
+    <article class="libro" id="libro-lie">
       <div class="copertina copertina-foto"><img src="../img/copertine/lie.jpg?v=2" alt="Couverture de .Lié." loading="lazy"></div>
       <h3>.Lié.</h3>
       <p class="anno">Poésie · Miraggi Edizioni · 2017</p>
@@ -218,12 +218,12 @@
       <img class="trama-copertina" src="../img/copertine/dopo-di-noi.jpg?v=1" alt="">
       <p class="label">Poésie · Bestseller Books · 2024</p>
       <h3 id="trama-dopo-titolo">.Dopo di noi.</h3>
-      <p class="evidenza-sotto">Poèmes de Lié Larousse · Illustrations de <a href="https://cortonafrancesca.it/" class="link-nome" target="_blank" rel="noopener">Francesca Cortona</a></p>
+      <p class="evidenza-sotto">Poèmes de Lié Larousse · Illustrations de <a href="https://cortonafrancesca.it/" class="link-nome" target="_blank" rel="noopener">Cortona Francesca</a></p>
       <p class="evidenza-gancio">Un dialogue poétique et visuel sur l’héritage des émotions et ce qui reste.</p>
-      <p>Dans <em>.Dopo di noi.</em>, la poésie intense et vibrante de Lié Larousse rencontre la sensibilité artistique de <a href="https://cortonafrancesca.it/" class="link-nome" target="_blank" rel="noopener">Francesca Cortona</a>, qui enrichit l’œuvre d’illustrations créées spécialement pour accompagner chaque vers. Un recueil intime et profond qui explore le sens du temps, des traces que nous laissons et de ce qui survit dans les espaces du cœur et de l’âme.</p>
+      <p>Dans <em>.Dopo di noi.</em>, la poésie intense et vibrante de Lié Larousse rencontre la sensibilité artistique de <a href="https://cortonafrancesca.it/" class="link-nome" target="_blank" rel="noopener">Cortona Francesca</a>, qui enrichit l’œuvre d’illustrations créées spécialement pour accompagner chaque vers. Un recueil intime et profond qui explore le sens du temps, des traces que nous laissons et de ce qui survit dans les espaces du cœur et de l’âme.</p>
       <p class="evidenza-viaggio">Une œuvre synesthésique où la parole écrite et l’art visuel se fondent pour offrir au lecteur un voyage émotionnel unique et touchant.</p>
       <ul class="perche">
-        <li><strong>Édition illustrée :</strong> Enrichie des œuvres originales de l’artiste <a href="https://cortonafrancesca.it/" class="link-nome" target="_blank" rel="noopener">Francesca Cortona</a>.</li>
+        <li><strong>Édition illustrée :</strong> Enrichie des œuvres originales de l’artiste <a href="https://cortonafrancesca.it/" class="link-nome" target="_blank" rel="noopener">Cortona Francesca</a>.</li>
         <li><strong>Une rencontre des arts :</strong> Une alliance parfaite entre parole poétique et suggestion visuelle.</li>
         <li><strong>Un thème profond :</strong> Une réflexion touchante sur la mémoire, le temps et les liens qui demeurent.</li>
       </ul>
@@ -350,6 +350,22 @@
   const t = document.querySelector('.nav-toggle'), l = document.querySelector('.nav-links');
   t.addEventListener('click', () => { const o = l.classList.toggle('open'); t.setAttribute('aria-expanded', o); });
   l.querySelectorAll('a').forEach(a => a.addEventListener('click', () => { l.classList.remove('open'); t.setAttribute('aria-expanded', false); }));
+  (function () {
+    const apri = () => {
+      const h = decodeURIComponent(location.hash.slice(1));
+      if (!h) return;
+      const el = document.getElementById(h);
+      if (el && el.tagName === 'DIALOG') {
+        document.querySelectorAll('dialog[open]').forEach(x => x.close());
+        el.showModal(); el.scrollTop = 0; document.body.style.overflow = 'hidden';
+      } else if (el) {
+        el.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        el.classList.add('evidenziato'); setTimeout(() => el.classList.remove('evidenziato'), 2200);
+      }
+    };
+    window.addEventListener('hashchange', apri);
+    apri();
+  })();
 </script>
 </body>
 </html>

@@ -641,3 +641,9 @@ a.link-nome:hover { color: var(--papavero); border-bottom-color: var(--papavero)
   .arte-voci { gap: 3.5rem; }
 }
 @media (max-width: 560px) { .tesori { grid-template-columns: 1fr; } .arte-invito { padding: 1.8rem 1.2rem 2rem; } }
+
+/* Bio: titoli dei libri collegati alla trama */
+.bio-text a.link-titolo { text-decoration: none; border-bottom: 1px dotted var(--oleandro); }
+.bio-text a.link-titolo:hover { border-bottom-style: solid; border-bottom-color: var(--papavero); }
+.bio-text a.link-titolo:hover em { color: var(--papavero); }
+.libro.evidenziato .copertina { box-shadow: 0 0 0 4px var(--carta-chiara), 0 0 0 6px var(--oleandro), 0 20px 30px -18px rgba(74,52,40,.5); transition: box-shadow .4s; }
