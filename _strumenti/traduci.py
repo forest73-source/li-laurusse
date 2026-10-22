@@ -263,7 +263,7 @@ def traduci(s, lang):
 
 
 # ---------- Anteprime social e Google ----------
-BASE = 'https://forest73-source.github.io/li-laurusse/'
+BASE = 'https://lielarousse.it/'
 LOCALE = {'it': 'it_IT', 'en': 'en_GB', 'fr': 'fr_FR'}
 DESCRIZIONI = {
  'it': {
