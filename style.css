@@ -432,3 +432,32 @@ main { flex: 1; }
 /* Bio: foto ferma, niente effetto "segue lo scorrimento" */
 .bio-section .bio-photo { position: static; top: auto; }
 .bio-section .bio { align-items: center; }
+
+/* Petali che cadono (Bio) */
+.petali { position: absolute; inset: 0; z-index: 1; pointer-events: none; overflow: hidden; }
+.bio-hero::after { z-index: 0; }
+.bio-hero-text { z-index: 2; }
+.petalo {
+  position: absolute; top: -40px; left: var(--x);
+  width: var(--s); height: calc(var(--s) * .78);
+  opacity: 0;
+  animation: cade var(--d) linear var(--ritardo) infinite;
+}
+.petalo::before {
+  content: ""; position: absolute; inset: 0;
+  background: radial-gradient(ellipse at 30% 30%, rgba(255,255,255,.55), transparent 55%), var(--c);
+  border-radius: 80% 10% 80% 15%;
+  box-shadow: inset -1px -2px 3px rgba(150,60,80,.25);
+  animation: ondeggia var(--r) ease-in-out infinite alternate, gira calc(var(--r) * 1.6) linear infinite;
+}
+@keyframes cade {
+  0%   { transform: translate(0, 0); opacity: 0; }
+  8%   { opacity: var(--o); }
+  85%  { opacity: var(--o); }
+  100% { transform: translate(var(--drift), 82vh); opacity: 0; }
+}
+@keyframes ondeggia { from { translate: -14px 0; } to { translate: 14px 0; } }
+@keyframes gira { from { transform: rotate(0deg) rotateX(0deg); } to { transform: rotate(360deg) rotateX(360deg); } }
+@media (prefers-reduced-motion: reduce) { .petali { display: none; } }
+@keyframes gira { 0% { transform: rotate(0deg) scaleX(1); } 50% { transform: rotate(180deg) scaleX(.65); } 100% { transform: rotate(360deg) scaleX(1); } }
+.petalo { width: calc(var(--s) * 1.15); height: calc(var(--s) * .9); }
