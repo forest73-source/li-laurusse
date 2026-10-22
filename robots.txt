@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://forest73-source.github.io/li-laurusse/sitemap.xml

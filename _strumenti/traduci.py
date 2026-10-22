@@ -31,6 +31,8 @@ LUNGHE = {
   'Per presentazioni, interviste, collaborazioni o semplicemente per due parole davanti a una tazza di tè, scrivimi.': 'For book presentations, interviews, collaborations or simply a chat over a cup of tea, write to me.',
   'Messaggio dal sito, da ': 'Message from the website, from ',
   'Apri il menu': 'Open the menu',
+  '<title>Lié Larousse · Scrittrice e poetessa</title>': '<title>Lié Larousse · Writer and poet</title>',
+  'Lié Larousse, scrittrice e poetessa</h1>': 'Lié Larousse, writer and poet</h1>',
  },
  'fr': {
   'Lié Larousse, scrittrice. Libri, racconti dal giardino e Libroarbitrio, il tempo di un tè con Lié.': 'Lié Larousse, écrivaine. Livres, récits du jardin et Libroarbitrio, le temps d’un thé avec Lié.',
@@ -57,6 +59,8 @@ LUNGHE = {
   'Per presentazioni, interviste, collaborazioni o semplicemente per due parole davanti a una tazza di tè, scrivimi.': 'Pour des présentations, des interviews, des collaborations ou simplement pour bavarder autour d’une tasse de thé, écrivez-moi.',
   'Messaggio dal sito, da ': 'Message du site, de la part de ',
   'Apri il menu': 'Ouvrir le menu',
+  '<title>Lié Larousse · Scrittrice e poetessa</title>': '<title>Lié Larousse · Écrivaine et poétesse</title>',
+  'Lié Larousse, scrittrice e poetessa</h1>': 'Lié Larousse, écrivaine et poétesse</h1>',
  },
 }
 
@@ -145,12 +149,97 @@ def traduci(s, lang):
     return s
 
 
+# ---------- Anteprime social e Google ----------
+BASE = 'https://forest73-source.github.io/li-laurusse/'
+LOCALE = {'it': 'it_IT', 'en': 'en_GB', 'fr': 'fr_FR'}
+DESCRIZIONI = {
+ 'it': {
+  'index.html': 'Lié Larousse, scrittrice e poetessa tra psicologia e botanica. Autrice di Rid Dementia, NATO SOLO e Ciao, come posso aiutarti? e del blog Libroarbitrio – Il tempo di un tè con Lié.',
+  'libri.html': 'I libri di Lié Larousse: Ciao, come posso aiutarti? I.A. Innamorati Artificiali, i romanzi Rid Dementia e NATO SOLO e le raccolte di poesie .Lié., .la vita comunque. e .Dopo di noi.',
+  'blog.html': 'Libroarbitrio – Il tempo di un tè con Lié: il blog e il canale YouTube di Lié Larousse, tra libri, natura e tempo lento.',
+  'contatti.html': 'Contatta Lié Larousse per presentazioni, interviste e collaborazioni. Email, Instagram, Facebook e YouTube.',
+ },
+ 'en': {
+  'index.html': 'Lié Larousse, writer and poet working between psychology and botany. Author of Rid Dementia, NATO SOLO and Ciao, come posso aiutarti?, and of the blog Libroarbitrio – Il tempo di un tè con Lié.',
+  'libri.html': 'The books of Lié Larousse: Ciao, come posso aiutarti? I.A. Innamorati Artificiali, the novels Rid Dementia and NATO SOLO, and the poetry collections .Lié., .la vita comunque. and .Dopo di noi.',
+  'blog.html': 'Libroarbitrio – Il tempo di un tè con Lié: the blog and YouTube channel of Lié Larousse, about books, nature and slow living.',
+  'contatti.html': 'Contact Lié Larousse for book presentations, interviews and collaborations. Email, Instagram, Facebook and YouTube.',
+ },
+ 'fr': {
+  'index.html': 'Lié Larousse, écrivaine et poétesse entre psychologie et botanique. Autrice de Rid Dementia, NATO SOLO et Ciao, come posso aiutarti?, et du blog Libroarbitrio – Il tempo di un tè con Lié.',
+  'libri.html': 'Les livres de Lié Larousse : Ciao, come posso aiutarti? I.A. Innamorati Artificiali, les romans Rid Dementia et NATO SOLO, et les recueils de poèmes .Lié., .la vita comunque. et .Dopo di noi.',
+  'blog.html': 'Libroarbitrio – Il tempo di un tè con Lié : le blog et la chaîne YouTube de Lié Larousse, entre livres, nature et temps lent.',
+  'contatti.html': 'Contactez Lié Larousse pour des présentations, des interviews et des collaborations. E-mail, Instagram, Facebook et YouTube.',
+ },
+}
+PERSONA = {
+ "@context": "https://schema.org", "@type": "Person", "name": "Lié Larousse",
+ "url": BASE, "image": BASE + "img/lie-ritratto-bio.jpg", "email": "mailto:lielarousse@yahoo.it",
+ "jobTitle": "Scrittrice e poetessa",
+ "sameAs": ["https://www.instagram.com/lielarousse/", "https://www.facebook.com/lie.larousse/",
+            "https://www.youtube.com/@Libroarbitrio", "https://libroarbitrio.wordpress.com/"]
+}
+
+
+def url_pagina(lang, pagina):
+    nome = '' if pagina == 'index.html' else pagina
+    return BASE + ('' if lang == 'it' else lang + '/') + nome
+
+
+def seo(s, lang, pagina):
+    import json, html as H
+    s = re.sub(r'\n?<!-- seo -->.*?<!-- /seo -->', '', s, flags=re.S)
+    s = re.sub(r'\n?<meta name="description" content="[^"]*">', '', s)
+    titolo = re.search(r'<title>(.*?)</title>', s).group(1)
+    desc = H.escape(DESCRIZIONI[lang][pagina])
+    righe = ['<!-- seo -->',
+        f'<meta name="description" content="{desc}">',
+        f'<link rel="canonical" href="{url_pagina(lang, pagina)}">']
+    for l in ['it', 'en', 'fr']:
+        righe.append(f'<link rel="alternate" hreflang="{l}" href="{url_pagina(l, pagina)}">')
+    righe.append(f'<link rel="alternate" hreflang="x-default" href="{url_pagina("it", pagina)}">')
+    righe += [
+        '<meta property="og:type" content="website">',
+        '<meta property="og:site_name" content="Lié Larousse">',
+        f'<meta property="og:title" content="{titolo}">',
+        f'<meta property="og:description" content="{desc}">',
+        f'<meta property="og:url" content="{url_pagina(lang, pagina)}">',
+        f'<meta property="og:image" content="{BASE}img/condivisione.jpg">',
+        '<meta property="og:image:width" content="1200">',
+        '<meta property="og:image:height" content="630">',
+        '<meta property="og:image:alt" content="Lié Larousse">',
+        f'<meta property="og:locale" content="{LOCALE[lang]}">',
+        '<meta name="twitter:card" content="summary_large_image">',
+        f'<meta name="twitter:title" content="{titolo}">',
+        f'<meta name="twitter:description" content="{desc}">',
+        f'<meta name="twitter:image" content="{BASE}img/condivisione.jpg">',
+    ]
+    if pagina == 'index.html':
+        righe.append('<script type="application/ld+json">' + json.dumps(PERSONA, ensure_ascii=False) + '</script>')
+    righe.append('<!-- /seo -->')
+    return s.replace('</title>\n', '</title>\n' + '\n'.join(righe) + '\n', 1)
+
+
+def sitemap():
+    voci = []
+    for pagina in PAGINE:
+        for lang in ['it', 'en', 'fr']:
+            alt = ''.join(f'\n    <xhtml:link rel="alternate" hreflang="{l}" href="{url_pagina(l, pagina)}"/>' for l in ['it', 'en', 'fr'])
+            voci.append(f'  <url>\n    <loc>{url_pagina(lang, pagina)}</loc>{alt}\n  </url>')
+    xml = ('<?xml version="1.0" encoding="UTF-8"?>\n'
+           '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">\n'
+           + '\n'.join(voci) + '\n</urlset>\n')
+    open('sitemap.xml', 'w', encoding='utf-8').write(xml)
+
+
 for pagina in PAGINE:
     it = open(pagina, encoding='utf-8').read()
     it = metti_switcher(it, 'it', pagina)
+    it = seo(it, 'it', pagina)
     open(pagina, 'w', encoding='utf-8').write(it)
     for lang in ['en', 'fr']:
         os.makedirs(lang, exist_ok=True)
-        out = metti_switcher(traduci(it, lang), lang, pagina)
+        out = seo(metti_switcher(traduci(it, lang), lang, pagina), lang, pagina)
         open(f'{lang}/{pagina}', 'w', encoding='utf-8').write(out)
+sitemap()
 print('fatto')
