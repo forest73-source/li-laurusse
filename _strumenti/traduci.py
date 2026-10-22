@@ -33,6 +33,23 @@ LUNGHE = {
   'Ogni storia inizia con un incontro, e ogni incontro profondo merita il suo tempo.': 'Every story begins with an encounter, and every deep encounter deserves its own time.',
   'Per progetti editoriali, collaborazioni, interviste, il desiderio di intraprendere un percorso trasformativo, sarò felice di accoglierti. Contattami per iniziare a parlarne…': 'For publishing projects, collaborations, interviews, or the wish to begin a transformative journey, I will be glad to welcome you. Get in touch and let’s start talking…',
   'Apri il menu': 'Open the menu',
+  'data-copiato="Copiato!"': 'data-copiato="Copied!"',
+  'data-su-richiesta="Prezzo su richiesta"': 'data-su-richiesta="Price on request"',
+  'data-oggetto="Ordine dal sito: "': 'data-oggetto="Order from the website: "',
+  'data-corpo="Ciao Lié, vorrei acquistare il libro «%TITOLO%».&#10;&#10;Ho pagato con: (bonifico / PayPal)&#10;&#10;Nome e cognome:&#10;Indirizzo di spedizione:&#10;CAP e città:&#10;Telefono (per il corriere):&#10;&#10;Grazie!"': 'data-corpo="Hello Lié, I would like to buy the book «%TITOLO%».&#10;&#10;I paid by: (bank transfer / PayPal)&#10;&#10;Full name:&#10;Shipping address:&#10;Postcode and city, country:&#10;Phone (for the courier):&#10;&#10;Thank you!"',
+  'data-paypal-lc="IT"': 'data-paypal-lc="GB"',
+  "Acquista direttamente dall'autrice": 'Buy directly from the author',
+  'spese di spedizione incluse': 'shipping included',
+  'Scegli come pagare:': 'Choose how to pay:',
+  "Paghi in modo sicuro sul sito di PayPal, anche con carta di credito. PayPal ti chiederà l'indirizzo di spedizione.": 'Pay securely on the PayPal website, also by credit card. PayPal will ask for your shipping address.',
+  '>Paga con PayPal<': '>Pay with PayPal<',
+  '>Bonifico bancario<': '>Bank transfer<',
+  '<dt>Intestatario</dt>': '<dt>Account holder</dt>',
+  '<dt>Causale</dt>': '<dt>Reference</dt>',
+  '>Copia<': '>Copy<',
+  "Dopo il bonifico, inviami l'ordine con il tuo indirizzo di spedizione:": 'After the transfer, send me your order with your shipping address:',
+  "Invia l'ordine via email": 'Send the order by email',
+  'Per qualsiasi domanda scrivimi a': 'For any questions, write to me at',
   'Poesie di Lié Larousse · Illustrazioni di Francesca Cortona': 'Poems by Lié Larousse · Illustrations by Francesca Cortona',
   "Un dialogo poetico e visivo sull'eredità delle emozioni e ciò che resta.": 'A poetic and visual dialogue on the legacy of emotions and what remains.',
   "<p>In <em>.Dopo di noi.</em> la poesia intensa e vibrante di Lié Larousse incontra la sensibilità artistica di Francesca Cortona, che arricchisce l'opera con illustrazioni create appositamente per accompagnare ciascun verso. Una raccolta intima e profonda che esplora il senso del tempo, delle tracce che lasciamo e di ciò che sopravvive negli spazi del cuore e dell'anima.": '<p>In <em>.Dopo di noi.</em> the intense, vibrant poetry of Lié Larousse meets the artistic sensibility of Francesca Cortona, who enriches the work with illustrations created specially to accompany each verse. An intimate and profound collection exploring the meaning of time, the traces we leave and what survives in the spaces of the heart and soul.',
@@ -115,6 +132,23 @@ LUNGHE = {
   'Ogni storia inizia con un incontro, e ogni incontro profondo merita il suo tempo.': 'Chaque histoire commence par une rencontre, et chaque rencontre profonde mérite son temps.',
   'Per progetti editoriali, collaborazioni, interviste, il desiderio di intraprendere un percorso trasformativo, sarò felice di accoglierti. Contattami per iniziare a parlarne…': 'Pour des projets éditoriaux, des collaborations, des interviews, ou le désir d’entreprendre un chemin de transformation, je serai heureuse de vous accueillir. Contactez-moi pour commencer à en parler…',
   'Apri il menu': 'Ouvrir le menu',
+  'data-copiato="Copiato!"': 'data-copiato="Copié !"',
+  'data-su-richiesta="Prezzo su richiesta"': 'data-su-richiesta="Prix sur demande"',
+  'data-oggetto="Ordine dal sito: "': 'data-oggetto="Commande depuis le site : "',
+  'data-corpo="Ciao Lié, vorrei acquistare il libro «%TITOLO%».&#10;&#10;Ho pagato con: (bonifico / PayPal)&#10;&#10;Nome e cognome:&#10;Indirizzo di spedizione:&#10;CAP e città:&#10;Telefono (per il corriere):&#10;&#10;Grazie!"': 'data-corpo="Bonjour Lié, je souhaite acheter le livre «%TITOLO%».&#10;&#10;J’ai payé par : (virement / PayPal)&#10;&#10;Nom et prénom :&#10;Adresse de livraison :&#10;Code postal, ville et pays :&#10;Téléphone (pour le transporteur) :&#10;&#10;Merci !"',
+  'data-paypal-lc="IT"': 'data-paypal-lc="FR"',
+  "Acquista direttamente dall'autrice": 'Acheter directement auprès de l’autrice',
+  'spese di spedizione incluse': 'frais de port inclus',
+  'Scegli come pagare:': 'Choisissez votre mode de paiement :',
+  "Paghi in modo sicuro sul sito di PayPal, anche con carta di credito. PayPal ti chiederà l'indirizzo di spedizione.": 'Payez en toute sécurité sur le site de PayPal, également par carte bancaire. PayPal vous demandera votre adresse de livraison.',
+  '>Paga con PayPal<': '>Payer avec PayPal<',
+  '>Bonifico bancario<': '>Virement bancaire<',
+  '<dt>Intestatario</dt>': '<dt>Titulaire</dt>',
+  '<dt>Causale</dt>': '<dt>Référence</dt>',
+  '>Copia<': '>Copier<',
+  "Dopo il bonifico, inviami l'ordine con il tuo indirizzo di spedizione:": 'Après le virement, envoyez-moi votre commande avec votre adresse de livraison :',
+  "Invia l'ordine via email": 'Envoyer la commande par e-mail',
+  'Per qualsiasi domanda scrivimi a': 'Pour toute question, écrivez-moi à',
   'Poesie di Lié Larousse · Illustrazioni di Francesca Cortona': 'Poèmes de Lié Larousse · Illustrations de Francesca Cortona',
   "Un dialogo poetico e visivo sull'eredità delle emozioni e ciò che resta.": 'Un dialogue poétique et visuel sur l’héritage des émotions et ce qui reste.',
   "<p>In <em>.Dopo di noi.</em> la poesia intensa e vibrante di Lié Larousse incontra la sensibilità artistica di Francesca Cortona, che arricchisce l'opera con illustrazioni create appositamente per accompagnare ciascun verso. Una raccolta intima e profonda che esplora il senso del tempo, delle tracce che lasciamo e di ciò che sopravvive negli spazi del cuore e dell'anima.": '<p>Dans <em>.Dopo di noi.</em>, la poésie intense et vibrante de Lié Larousse rencontre la sensibilité artistique de Francesca Cortona, qui enrichit l’œuvre d’illustrations créées spécialement pour accompagner chaque vers. Un recueil intime et profond qui explore le sens du temps, des traces que nous laissons et de ce qui survit dans les espaces du cœur et de l’âme.',
@@ -190,7 +224,7 @@ BREVI = {
   'Dal mio canale YouTube': 'From my YouTube channel', 'Tutti i video ▸': 'All videos ▸',
   'Nome': 'Name', 'Messaggio': 'Message', 'Invia': 'Send',
   'La tua email': 'Your email',
-  'Leggi la trama': 'Read the plot',
+  'Leggi la trama': 'Read the plot', 'Acquista': 'Buy',
   'Ultimi articoli dal blog': 'Latest from the blog', 'Tutti gli articoli →': 'All posts →',
   '12 ottobre 2026': '12 October 2026',
  },
@@ -210,7 +244,7 @@ BREVI = {
   'Dal mio canale YouTube': 'Sur ma chaîne YouTube', 'Tutti i video ▸': 'Toutes les vidéos ▸',
   'Nome': 'Nom', 'Messaggio': 'Message', 'Invia': 'Envoyer', 'Email': 'E-mail',
   'La tua email': 'Votre e-mail',
-  'Leggi la trama': 'Lire le résumé',
+  'Leggi la trama': 'Lire le résumé', 'Acquista': 'Acheter',
   'Ultimi articoli dal blog': 'Derniers articles du blog', 'Tutti gli articoli →': 'Tous les articles →',
   '12 ottobre 2026': '12 octobre 2026',
  },
@@ -254,11 +288,12 @@ def traduci(s, lang):
     GENERI = {'en': {'Romanzo': 'Novel', 'Poesia': 'Poetry', 'Saggio': 'Essay'},
               'fr': {'Romanzo': 'Roman', 'Poesia': 'Poésie', 'Saggio': 'Essai'}}
     s = re.sub(r'<p class="(anno|label)">(Romanzo|Poesia|Saggio)', lambda m: '<p class="' + m.group(1) + '">' + GENERI[lang][m.group(2)], s)
+    s = re.sub(r'>Acquista · (\d+),(\d+) €<', lambda m: ('>Buy · €' + m.group(1) + '.' + m.group(2) + '<') if lang == 'en' else ('>Acheter · ' + m.group(1) + ',' + m.group(2) + ' €<'), s)
     s = s.replace("</em> e all'<em>", '</em> ' + {'en': 'and ', 'fr': 'et à l’'}[lang] + '<em>')
     s = s.replace('<html lang="it">', f'<html lang="{lang}">')
     # percorsi verso i file condivisi
     s = re.sub(r'href="style\.css', 'href="../style.css', s)
-    s = s.replace('src="img/', 'src="../img/').replace('href="img/', 'href="../img/').replace('href="favicon.ico"', 'href="../favicon.ico"')
+    s = s.replace('src="img/', 'src="../img/').replace('data-copertina="img/', 'data-copertina="../img/').replace('href="img/', 'href="../img/').replace('href="favicon.ico"', 'href="../favicon.ico"')
     return s
 
 

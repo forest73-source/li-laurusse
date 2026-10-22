@@ -582,3 +582,21 @@ a.link-nome:hover { color: var(--papavero); border-bottom-color: var(--papavero)
   .youtube:not(.youtube-rev), .youtube.youtube-rev { grid-template-columns: 1fr; }
   .youtube:not(.youtube-rev) .yt-thumb { order: 0; }
 }
+
+/* Finestra "Acquista" */
+.acquista .acq-prezzo { font-family: var(--serif); font-size: 1.3rem; margin: .2rem 0 1.2rem; }
+.acquista .acq-prezzo strong { color: var(--rame); font-size: 1.6rem; margin-right: .4rem; }
+.acquista .acq-prezzo span { font-style: italic; color: var(--salvia); font-size: 1rem; }
+.acquista .acq-intro { clear: both; font-family: var(--serif); font-style: italic; font-size: 1.15rem; margin-bottom: .8rem; }
+.acq-metodo { border: 1px solid var(--carta-scura); background: var(--carta); padding: 1.2rem 1.4rem 1.4rem; margin-bottom: 1rem; }
+.acq-metodo[hidden] { display: none; }
+.acq-metodo-titolo { font-family: var(--serif) !important; font-size: 1.35rem !important; font-weight: 600; color: var(--inchiostro); margin: 0 0 .4rem !important; }
+.acq-metodo p { margin-bottom: .9rem; font-size: 1.02rem; }
+.acq-dati { display: grid; grid-template-columns: auto 1fr; gap: .35rem 1rem; margin: .2rem 0 1rem; align-items: baseline; }
+.acq-dati dt { font-family: var(--serif); letter-spacing: .12em; text-transform: uppercase; font-size: .78rem; color: var(--salvia); }
+.acq-dati dd { margin: 0; font-size: 1.02rem; }
+.acq-iban { font-family: ui-monospace, "SFMono-Regular", Menlo, monospace; font-size: .98rem; letter-spacing: .04em; color: var(--inchiostro); word-break: break-all; }
+.acq-copia { margin-left: .4rem; font: inherit; font-size: .8rem; letter-spacing: .08em; text-transform: uppercase; color: var(--rame); background: transparent; border: 1px solid var(--rame); border-radius: 2px; padding: .1rem .5rem; cursor: pointer; }
+.acq-copia:hover { background: var(--rame); color: var(--carta-chiara); }
+.acq-nota { font-size: .95rem; font-style: italic; color: var(--salvia); margin-top: .6rem; }
+@media (max-width: 600px) { .acq-dati { grid-template-columns: 1fr; gap: .1rem; } .acq-dati dd { margin-bottom: .5rem; } }
