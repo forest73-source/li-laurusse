@@ -12,3 +12,8 @@ Per pubblicarlo gratis: Settings → Pages → Branch `main` / root.
 Le versioni inglese (`en/`) e francese (`fr/`) si generano dalle pagine italiane con
 `python3 _strumenti/traduci.py`. Dopo ogni modifica ai testi italiani, aggiornare i
 dizionari nello script e rilanciarlo.
+
+## IndexNow (Bing, Yandex…)
+Chiave: `884e0395d24f94a713fae873e4b50dfb` (file `884e0395d24f94a713fae873e4b50dfb.txt` nella cartella principale).
+Dopo una modifica importante, avvisare i motori con:
+https://www.bing.com/indexnow?url=https://lielarousse.it/&key=884e0395d24f94a713fae873e4b50dfb
