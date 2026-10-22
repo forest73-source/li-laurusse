@@ -29,7 +29,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=EB+Garamond:ital,wght@0,400;0,500;1,400&family=Great+Vibes&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="../style.css?v=20261022l">
+<link rel="stylesheet" href="../style.css?v=20261022m">
 <link rel="icon" href="../favicon.ico" sizes="any">
 <link rel="icon" type="image/png" sizes="32x32" href="../img/favicon-32.png">
 <link rel="icon" type="image/png" sizes="192x192" href="../img/icona-192.png">
@@ -117,7 +117,10 @@
       <h3>.la vita comunque.</h3>
       <p class="anno">Poetry · Bestseller Books · 2020</p>
       <p>Poetry collection.</p>
-      <a href="https://www.amazon.it/dp/8894500918" class="btn btn-small" target="_blank" rel="noopener">Buy on Amazon</a>
+      <div class="libro-azioni">
+        <button type="button" class="btn btn-small btn-chiaro" data-trama="trama-vita">Read the plot</button>
+        <a href="https://www.amazon.it/dp/8894500918" class="btn btn-small" target="_blank" rel="noopener">Buy on Amazon</a>
+      </div>
     </article>
     <article class="libro">
       <div class="copertina c1"><span>.Dopo di noi.</span></div>
@@ -179,6 +182,27 @@
       <p>A deep and moving coming-of-age novel with a strong psychological vein, telling the redemption of a lost soul and showing how, even in the thickest darkness, friendship is the only thing truly worth fighting for.</p>
       <p class="evidenza-viaggio">A raw and poetic story about the hunger for life, survival and the strength of true bonds.</p>
       <a href="https://www.amazon.it/dp/B0C2B6HJ9H" class="btn" target="_blank" rel="noopener">Buy on Amazon · €16.00</a>
+    </div>
+  </dialog>
+
+  <dialog class="trama" id="trama-vita" aria-labelledby="trama-vita-titolo">
+    <button type="button" class="trama-chiudi" aria-label="Close">×</button>
+    <div class="trama-corpo">
+      <img class="trama-copertina" src="../img/copertine/la-vita-comunque.jpg?v=2" alt="">
+      <p class="label">Poetry · Bestseller Books · 2020</p>
+      <h3 id="trama-vita-titolo">.la vita comunque.</h3>
+      <p class="evidenza-sotto">Poems by Lié Larousse</p>
+      <p class="evidenza-gancio">“Living really is hard work… but it’s life, anyway.”</p>
+      <p>In this intense and delicate poetry collection, Lié Larousse invites us to look into her world and into the lives that cross every day: distracted, hurried souls, yet capable of the most beautiful loves. With the grace of a watercolour brushstroke, her verses turn the simplest details — from grandpa’s sauce to the bars on the edge of town, to the glances of strangers — into moments of pure eternity.</p>
+      <p><em>La vita comunque</em> is a celebration of existence in all its shades. It reminds us that even on stormy seas, when the heart is about to shatter, the only possible answer is to love harder, write harder and live harder. An intimate, luminous book for those who will not let love be stolen from them and want to rediscover the poetry hidden in every single day.</p>
+      <p class="evidenza-viaggio">A hymn to the imperfect beauty of life, to read and keep close to your heart.</p>
+      <blockquote class="recensione">“It takes so much love to write verses like these, to capture the poetry blazing out of the bars on the edge of town… A powerful message that leaves us breathless before so much ‘simple’ truth.”<cite>from the review by Martina Benigni</cite></blockquote>
+      <ul class="perche">
+        <li><strong>Everyday poetry:</strong> An intimate gaze that turns simplicity into magic and sweetness.</li>
+        <li><strong>A refuge for the soul:</strong> Deep verses on fragility, rebirth and the strength of love.</li>
+        <li><strong>The ideal format:</strong> A book to savour day by day, or to give to someone you love.</li>
+      </ul>
+      <a href="https://www.amazon.it/dp/8894500918" class="btn" target="_blank" rel="noopener">Buy on Amazon · €12.00</a>
     </div>
   </dialog>
 </section>

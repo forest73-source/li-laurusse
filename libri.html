@@ -29,7 +29,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=EB+Garamond:ital,wght@0,400;0,500;1,400&family=Great+Vibes&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css?v=20261022l">
+<link rel="stylesheet" href="style.css?v=20261022m">
 <link rel="icon" href="favicon.ico" sizes="any">
 <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32.png">
 <link rel="icon" type="image/png" sizes="192x192" href="img/icona-192.png">
@@ -117,7 +117,10 @@
       <h3>.la vita comunque.</h3>
       <p class="anno">Poesia · Bestseller Books · 2020</p>
       <p>Raccolta di poesie.</p>
-      <a href="https://www.amazon.it/dp/8894500918" class="btn btn-small" target="_blank" rel="noopener">Acquista su Amazon</a>
+      <div class="libro-azioni">
+        <button type="button" class="btn btn-small btn-chiaro" data-trama="trama-vita">Leggi la trama</button>
+        <a href="https://www.amazon.it/dp/8894500918" class="btn btn-small" target="_blank" rel="noopener">Acquista su Amazon</a>
+      </div>
     </article>
     <article class="libro">
       <div class="copertina c1"><span>.Dopo di noi.</span></div>
@@ -179,6 +182,27 @@
       <p>Un romanzo di formazione profondo e toccante, dall'intensa venatura psicologica, che racconta il riscatto di un'anima smarrita e dimostra come, persino nel buio più fitto, l'amicizia sia l'unica cosa per cui valga davvero la pena lottare.</p>
       <p class="evidenza-viaggio">Una storia cruda e poetica sulla fame di vita, la sopravvivenza e la forza dei legami autentici.</p>
       <a href="https://www.amazon.it/dp/B0C2B6HJ9H" class="btn" target="_blank" rel="noopener">Acquista su Amazon · 16,00 €</a>
+    </div>
+  </dialog>
+
+  <dialog class="trama" id="trama-vita" aria-labelledby="trama-vita-titolo">
+    <button type="button" class="trama-chiudi" aria-label="Chiudi">×</button>
+    <div class="trama-corpo">
+      <img class="trama-copertina" src="img/copertine/la-vita-comunque.jpg?v=2" alt="">
+      <p class="label">Poesia · Bestseller Books · 2020</p>
+      <h3 id="trama-vita-titolo">.la vita comunque.</h3>
+      <p class="evidenza-sotto">Poesie di Lié Larousse</p>
+      <p class="evidenza-gancio">“Vivere è proprio un lavoro… ma è la vita, comunque.”</p>
+      <p>In questa intensa e delicata raccolta di poesie, Lié Larousse ci invita ad affacciarci sul suo mondo e su quelle vite che s'incrociano ogni giorno: anime distratte, frettolose, ma capaci di amori bellissimi. Con la grazia di una pennellata d'acquerello, i suoi versi trasformano i dettagli più semplici — dal sughetto del nonno ai bar di periferia, fino agli sguardi degli sconosciuti — in istanti di pura eternità.</p>
+      <p><em>La vita comunque</em> è una celebrazione dell'esistere in tutte le sue sfumature. Ci ricorda che anche nei mari in tempesta, quando il cuore rischia di frantumarsi, l'unica risposta possibile è amare più forte, scrivere più forte e vivere più forte. Un libro intimo e luminoso per chi non vuole farsi rubare l'amore e desidera riscoprire la poesia nascosta dentro ogni singolo giorno.</p>
+      <p class="evidenza-viaggio">Un inno alla bellezza imperfetta della vita, da leggere e custodire vicino al cuore.</p>
+      <blockquote class="recensione">“C'è tanto amore per scrivere versi come questi, per riuscire a cogliere la poesia che divampa dai bar di periferia… Un messaggio potente che ci lascia senza fiato di fronte a tanta ‘semplice’ verità.”<cite>dalla recensione di Martina Benigni</cite></blockquote>
+      <ul class="perche">
+        <li><strong>Poesia del quotidiano:</strong> Uno sguardo intimo che trasforma la semplicità in magia e dolcezza.</li>
+        <li><strong>Un rifugio per l'anima:</strong> Versi profondi sulle fragilità, sulle rinascite e sulla forza dell'amore.</li>
+        <li><strong>Formato ideale:</strong> Una lettura da assaporare giorno per giorno o da regalare a chi amiamo.</li>
+      </ul>
+      <a href="https://www.amazon.it/dp/8894500918" class="btn" target="_blank" rel="noopener">Acquista su Amazon · 12,00 €</a>
     </div>
   </dialog>
 </section>
