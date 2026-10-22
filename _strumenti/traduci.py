@@ -78,6 +78,8 @@ BREVI = {
   'Dal mio canale YouTube': 'From my YouTube channel', 'Tutti i video ▸': 'All videos ▸',
   'Nome': 'Name', 'Messaggio': 'Message', 'Invia': 'Send',
   'La tua email': 'Your email',
+  'Ultimi articoli dal blog': 'Latest from the blog', 'Tutti gli articoli →': 'All posts →',
+  '12 ottobre 2026': '12 October 2026',
  },
  'fr': {
   'Bio · Lié Larousse': 'Biographie · Lié Larousse', 'Libri · Lié Larousse': 'Livres · Lié Larousse',
@@ -95,6 +97,8 @@ BREVI = {
   'Dal mio canale YouTube': 'Sur ma chaîne YouTube', 'Tutti i video ▸': 'Toutes les vidéos ▸',
   'Nome': 'Nom', 'Messaggio': 'Message', 'Invia': 'Envoyer', 'Email': 'E-mail',
   'La tua email': 'Votre e-mail',
+  'Ultimi articoli dal blog': 'Derniers articles du blog', 'Tutti gli articoli →': 'Tous les articles →',
+  '12 ottobre 2026': '12 octobre 2026',
  },
 }
 PLACEHOLDER = {'en': 'Your email', 'fr': 'Votre e-mail'}
@@ -129,6 +133,8 @@ def traduci(s, lang):
         s = s.replace(it, tr)
     for it, tr in sorted(BREVI[lang].items(), key=lambda kv: -len(kv[0])):
         s = s.replace('>' + it + '<', '>' + tr + '<')
+    s = s.replace('data-leggi="Leggi →"', 'data-leggi="' + {'en': 'Read →', 'fr': 'Lire →'}[lang] + '"')
+    s = s.replace('>Leggi →<', '>' + {'en': 'Read →', 'fr': 'Lire →'}[lang] + '<')
     s = s.replace('placeholder="La tua email"', f'placeholder="{PLACEHOLDER[lang]}"')
     s = s.replace('</em></a> e <a', f'</em></a> {CONGIUNZIONE[lang]} <a').replace('</em> e <em>', f'</em> {CONGIUNZIONE[lang]} <em>')
     s = s.replace("</em> e all'<em>", '</em> ' + {'en': 'and ', 'fr': 'et à l’'}[lang] + '<em>')
