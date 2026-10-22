@@ -8,7 +8,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=EB+Garamond:ital,wght@0,400;0,500;1,400&family=Great+Vibes&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css?v=20261021f">
+<link rel="stylesheet" href="style.css?v=20261022a">
 </head>
 <body>
 
@@ -39,7 +39,7 @@
     <a href="blog.html">Blog</a>
     <a href="contatti.html" class="attivo" aria-current="page">Contatti</a>
   </nav>
-  <div class="lingue"><a href="contatti.html" hreflang="it" lang="it" class="attivo" aria-current="true">IT</a><span>·</span><a href="en/contatti.html" hreflang="en" lang="en">EN</a><span>·</span><a href="fr/contatti.html" hreflang="fr" lang="fr">FR</a></div>
+  <details class="lingue"><summary aria-label="Lingua"><span class="lingue-globo" aria-hidden="true">❀</span>IT<span class="lingue-freccia" aria-hidden="true">▾</span></summary><ul><li><a href="contatti.html" hreflang="it" lang="it" class="attivo" aria-current="true"><b>IT</b> Italiano</a></li><li><a href="en/contatti.html" hreflang="en" lang="en"><b>EN</b> English</a></li><li><a href="fr/contatti.html" hreflang="fr" lang="fr"><b>FR</b> Français</a></li></ul></details>
 </header>
 
 <main>
@@ -100,6 +100,8 @@
 </footer>
 
 <script>
+  const lg = document.querySelector('.lingue');
+  if (lg) document.addEventListener('click', e => { if (!lg.contains(e.target)) lg.removeAttribute('open'); });
   const t = document.querySelector('.nav-toggle'), l = document.querySelector('.nav-links');
   t.addEventListener('click', () => { const o = l.classList.toggle('open'); t.setAttribute('aria-expanded', o); });
   l.querySelectorAll('a').forEach(a => a.addEventListener('click', () => { l.classList.remove('open'); t.setAttribute('aria-expanded', false); }));

@@ -356,3 +356,37 @@ main { flex: 1; }
   .lingue { order: 2; padding-left: 0; border-left: 0; font-size: .85rem; }
   .nav-toggle { order: 3; }
 }
+
+/* Lingue: tendina */
+.lingue { position: relative; display: block; padding-left: 1.4rem; border-left: 1px solid var(--carta-scura); font-family: var(--serif); }
+.lingue summary {
+  list-style: none; cursor: pointer; user-select: none;
+  display: flex; align-items: center; gap: .4rem;
+  font-size: .95rem; letter-spacing: .15em; color: var(--rame); font-weight: 600;
+  padding: .35rem .7rem; border: 1px solid var(--carta-scura); border-radius: 2px; background: var(--carta-chiara);
+}
+.lingue summary::-webkit-details-marker { display: none; }
+.lingue summary:hover { border-color: var(--oleandro); }
+.lingue-globo { color: var(--oleandro); font-weight: 400; letter-spacing: 0; }
+.lingue-freccia { font-size: .75rem; color: var(--salvia); transition: transform .25s; }
+.lingue[open] .lingue-freccia { transform: rotate(180deg); }
+.lingue ul {
+  list-style: none; position: absolute; right: 0; top: calc(100% + .5rem); z-index: 20;
+  min-width: 170px; padding: .4rem 0; margin: 0;
+  background: var(--carta-chiara); border: 1px solid var(--carta-scura);
+  box-shadow: 0 0 0 4px var(--carta-chiara), 0 0 0 5px var(--carta-scura), 0 18px 30px -16px rgba(74,52,40,.5);
+}
+.lingue li a {
+  display: flex; gap: .7rem; align-items: baseline;
+  padding: .55rem 1.1rem; text-decoration: none; opacity: 1;
+  color: var(--inchiostro); font-size: 1.05rem; letter-spacing: .03em;
+}
+.lingue li a b { font-size: .8rem; letter-spacing: .15em; color: var(--salvia); font-weight: 600; width: 1.6rem; }
+.lingue li a:hover { background: rgba(217,139,166,.12); color: var(--papavero); }
+.lingue li a.attivo { color: var(--rame); font-style: italic; }
+.lingue li a.attivo b { color: var(--rame); }
+.lingue li + li { border-top: 1px dashed var(--carta-scura); }
+@media (max-width: 860px) {
+  .lingue { padding-left: 0; border-left: 0; }
+  .lingue summary { font-size: .85rem; padding: .3rem .55rem; }
+}

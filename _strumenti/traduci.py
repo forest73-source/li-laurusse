@@ -102,6 +102,7 @@ CONGIUNZIONE = {'en': 'and', 'fr': 'et'}  # ".la vita comunque. e .Dopo di noi."
 
 
 def switcher(lang, pagina):
+    nomi = {'it': 'Italiano', 'en': 'English', 'fr': 'Français'}
     voci = []
     for codice in ['it', 'en', 'fr']:
         if lang == 'it':
@@ -109,12 +110,17 @@ def switcher(lang, pagina):
         else:
             href = f'../{pagina}' if codice == 'it' else (pagina if codice == lang else f'../{codice}/{pagina}')
         att = ' class="attivo" aria-current="true"' if codice == lang else ''
-        voci.append(f'<a href="{href}" hreflang="{codice}" lang="{codice}"{att}>{codice.upper()}</a>')
-    return '<div class="lingue">' + '<span>·</span>'.join(voci) + '</div>'
+        voci.append(f'<li><a href="{href}" hreflang="{codice}" lang="{codice}"{att}><b>{codice.upper()}</b> {nomi[codice]}</a></li>')
+    etichetta = {'it': 'Lingua', 'en': 'Language', 'fr': 'Langue'}[lang]
+    return ('<details class="lingue"><summary aria-label="' + etichetta + '">'
+            + '<span class="lingue-globo" aria-hidden="true">❀</span>' + lang.upper()
+            + '<span class="lingue-freccia" aria-hidden="true">▾</span></summary><ul>'
+            + ''.join(voci) + '</ul></details>')
 
 
 def metti_switcher(s, lang, pagina):
     s = re.sub(r'\s*<div class="lingue">.*?</div>', '', s, flags=re.S)
+    s = re.sub(r'\s*<details class="lingue">.*?</details>', '', s, flags=re.S)
     return s.replace('</nav>\n</header>', '</nav>\n  ' + switcher(lang, pagina) + '\n</header>', 1)
 
 
