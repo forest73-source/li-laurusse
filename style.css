@@ -686,3 +686,7 @@ dialog.trama:focus, dialog.trama:focus-visible { outline: none; }
   .contatti .form textarea { min-height: 5.5rem; height: 5.5rem; padding: .55rem .7rem; }
   .contatti .form .btn { padding: .6rem 1.6rem; }
 }
+/* Blog (telefono): prima il testo con il pulsante, sotto la foto, in entrambi i riquadri */
+@media (max-width: 860px) {
+  .youtube .yt-thumb, .youtube.youtube-rev .yt-thumb, .youtube:not(.youtube-rev) .yt-thumb { order: 2; }
+}
