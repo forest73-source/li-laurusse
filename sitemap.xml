@@ -5,89 +5,104 @@
     <xhtml:link rel="alternate" hreflang="it" href="https://lielarousse.it/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://lielarousse.it/en/"/>
     <xhtml:link rel="alternate" hreflang="fr" href="https://lielarousse.it/fr/"/>
+      <xhtml:link rel="alternate" hreflang="x-default" href="https://lielarousse.it/"/>
   </url>
   <url>
     <loc>https://lielarousse.it/en/</loc>
     <xhtml:link rel="alternate" hreflang="it" href="https://lielarousse.it/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://lielarousse.it/en/"/>
     <xhtml:link rel="alternate" hreflang="fr" href="https://lielarousse.it/fr/"/>
+      <xhtml:link rel="alternate" hreflang="x-default" href="https://lielarousse.it/"/>
   </url>
   <url>
     <loc>https://lielarousse.it/fr/</loc>
     <xhtml:link rel="alternate" hreflang="it" href="https://lielarousse.it/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://lielarousse.it/en/"/>
     <xhtml:link rel="alternate" hreflang="fr" href="https://lielarousse.it/fr/"/>
+      <xhtml:link rel="alternate" hreflang="x-default" href="https://lielarousse.it/"/>
   </url>
   <url>
     <loc>https://lielarousse.it/libri.html</loc>
     <xhtml:link rel="alternate" hreflang="it" href="https://lielarousse.it/libri.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://lielarousse.it/en/libri.html"/>
     <xhtml:link rel="alternate" hreflang="fr" href="https://lielarousse.it/fr/libri.html"/>
+      <xhtml:link rel="alternate" hreflang="x-default" href="https://lielarousse.it/libri.html"/>
   </url>
   <url>
     <loc>https://lielarousse.it/en/libri.html</loc>
     <xhtml:link rel="alternate" hreflang="it" href="https://lielarousse.it/libri.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://lielarousse.it/en/libri.html"/>
     <xhtml:link rel="alternate" hreflang="fr" href="https://lielarousse.it/fr/libri.html"/>
+      <xhtml:link rel="alternate" hreflang="x-default" href="https://lielarousse.it/libri.html"/>
   </url>
   <url>
     <loc>https://lielarousse.it/fr/libri.html</loc>
     <xhtml:link rel="alternate" hreflang="it" href="https://lielarousse.it/libri.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://lielarousse.it/en/libri.html"/>
     <xhtml:link rel="alternate" hreflang="fr" href="https://lielarousse.it/fr/libri.html"/>
+      <xhtml:link rel="alternate" hreflang="x-default" href="https://lielarousse.it/libri.html"/>
   </url>
   <url>
     <loc>https://lielarousse.it/arte.html</loc>
     <xhtml:link rel="alternate" hreflang="it" href="https://lielarousse.it/arte.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://lielarousse.it/en/arte.html"/>
     <xhtml:link rel="alternate" hreflang="fr" href="https://lielarousse.it/fr/arte.html"/>
+      <xhtml:link rel="alternate" hreflang="x-default" href="https://lielarousse.it/arte.html"/>
   </url>
   <url>
     <loc>https://lielarousse.it/en/arte.html</loc>
     <xhtml:link rel="alternate" hreflang="it" href="https://lielarousse.it/arte.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://lielarousse.it/en/arte.html"/>
     <xhtml:link rel="alternate" hreflang="fr" href="https://lielarousse.it/fr/arte.html"/>
+      <xhtml:link rel="alternate" hreflang="x-default" href="https://lielarousse.it/arte.html"/>
   </url>
   <url>
     <loc>https://lielarousse.it/fr/arte.html</loc>
     <xhtml:link rel="alternate" hreflang="it" href="https://lielarousse.it/arte.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://lielarousse.it/en/arte.html"/>
     <xhtml:link rel="alternate" hreflang="fr" href="https://lielarousse.it/fr/arte.html"/>
+      <xhtml:link rel="alternate" hreflang="x-default" href="https://lielarousse.it/arte.html"/>
   </url>
   <url>
     <loc>https://lielarousse.it/blog.html</loc>
     <xhtml:link rel="alternate" hreflang="it" href="https://lielarousse.it/blog.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://lielarousse.it/en/blog.html"/>
     <xhtml:link rel="alternate" hreflang="fr" href="https://lielarousse.it/fr/blog.html"/>
+      <xhtml:link rel="alternate" hreflang="x-default" href="https://lielarousse.it/blog.html"/>
   </url>
   <url>
     <loc>https://lielarousse.it/en/blog.html</loc>
     <xhtml:link rel="alternate" hreflang="it" href="https://lielarousse.it/blog.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://lielarousse.it/en/blog.html"/>
     <xhtml:link rel="alternate" hreflang="fr" href="https://lielarousse.it/fr/blog.html"/>
+      <xhtml:link rel="alternate" hreflang="x-default" href="https://lielarousse.it/blog.html"/>
   </url>
   <url>
     <loc>https://lielarousse.it/fr/blog.html</loc>
     <xhtml:link rel="alternate" hreflang="it" href="https://lielarousse.it/blog.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://lielarousse.it/en/blog.html"/>
     <xhtml:link rel="alternate" hreflang="fr" href="https://lielarousse.it/fr/blog.html"/>
+      <xhtml:link rel="alternate" hreflang="x-default" href="https://lielarousse.it/blog.html"/>
   </url>
   <url>
     <loc>https://lielarousse.it/contatti.html</loc>
     <xhtml:link rel="alternate" hreflang="it" href="https://lielarousse.it/contatti.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://lielarousse.it/en/contatti.html"/>
     <xhtml:link rel="alternate" hreflang="fr" href="https://lielarousse.it/fr/contatti.html"/>
+      <xhtml:link rel="alternate" hreflang="x-default" href="https://lielarousse.it/contatti.html"/>
   </url>
   <url>
     <loc>https://lielarousse.it/en/contatti.html</loc>
     <xhtml:link rel="alternate" hreflang="it" href="https://lielarousse.it/contatti.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://lielarousse.it/en/contatti.html"/>
     <xhtml:link rel="alternate" hreflang="fr" href="https://lielarousse.it/fr/contatti.html"/>
+      <xhtml:link rel="alternate" hreflang="x-default" href="https://lielarousse.it/contatti.html"/>
   </url>
   <url>
     <loc>https://lielarousse.it/fr/contatti.html</loc>
     <xhtml:link rel="alternate" hreflang="it" href="https://lielarousse.it/contatti.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://lielarousse.it/en/contatti.html"/>
     <xhtml:link rel="alternate" hreflang="fr" href="https://lielarousse.it/fr/contatti.html"/>
+      <xhtml:link rel="alternate" hreflang="x-default" href="https://lielarousse.it/contatti.html"/>
   </url>
 </urlset>
