@@ -675,3 +675,14 @@ dialog.trama:focus, dialog.trama:focus-visible { outline: none; }
 @media (max-width: 860px) {
   .contatti .form { order: -1; }
 }
+/* Contatti (telefono): modulo compatto, visibile per intero appena si apre la pagina */
+@media (max-width: 860px) {
+  body:has(#modulo) .section { padding-top: 1rem; }
+  body:has(#modulo) .section-head { margin-bottom: 1rem; }
+  body:has(#modulo) .section-head h1 { font-size: 2.3rem; line-height: 1.05; margin: 0; }
+  body:has(#modulo) .section-head .rametto { margin-top: .2rem; }
+  .contatti .form { padding: 1.1rem 1.1rem; gap: .55rem; }
+  .contatti .form input { padding: .55rem .7rem; }
+  .contatti .form textarea { min-height: 5.5rem; height: 5.5rem; padding: .55rem .7rem; }
+  .contatti .form .btn { padding: .6rem 1.6rem; }
+}
