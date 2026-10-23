@@ -669,3 +669,5 @@ dialog.trama:focus, dialog.trama:focus-visible { outline: none; }
 }
 /* Bio: frase iniziale più fluida, righe bilanciate */
 .bio-hero-text .citazione { max-width: 20em; margin-left: auto; margin-right: auto; text-wrap: balance; }
+/* Bio: virgolette della frase iniziale nel rosa delle virgolette di prima */
+.citazione .virg { color: var(--oleandro); font-style: normal; font-weight: 600; }
