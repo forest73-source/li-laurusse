@@ -570,8 +570,8 @@ dialog.trama[open] { animation: foglio .45s cubic-bezier(.2,.8,.2,1); }
 .trama-corpo .perche strong { color: var(--rame); font-weight: 600; }
 
 /* Nome con collegamento (es. Francesca Cortona) */
-a.link-nome { color: var(--rame); text-decoration: none; border-bottom: 1px solid var(--oleandro); transition: color .25s, border-color .25s; }
-a.link-nome:hover { color: var(--papavero); border-bottom-color: var(--papavero); }
+a.link-nome { color: var(--rame); text-decoration: none; border-bottom: 0; transition: color .25s; }
+a.link-nome:hover { color: var(--papavero); }
 
 /* Blog: blocco del blog con testo a sinistra e immagine a destra, YouTube al contrario */
 .youtube:not(.youtube-rev) { grid-template-columns: 1fr 1.4fr; }
