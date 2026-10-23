@@ -667,3 +667,5 @@ dialog.trama:focus, dialog.trama:focus-visible { outline: none; }
   .yt-text h3 { font-size: clamp(2rem, 11vw, 2.8rem); overflow-wrap: anywhere; }
   .yt-sub { font-size: 1.1rem; }
 }
+/* Bio: frase iniziale più fluida, righe bilanciate */
+.bio-hero-text .citazione { max-width: 20em; margin-left: auto; margin-right: auto; text-wrap: balance; }
