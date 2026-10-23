@@ -661,3 +661,9 @@ a.link-nome:hover { color: var(--papavero); }
 dialog.trama:focus, dialog.trama:focus-visible { outline: none; }
 /* Voce Shop (Etsy) nel menu */
 .nav-esterno { font-size: .75em; margin-left: .25em; color: var(--oleandro); letter-spacing: 0; }
+/* Telefono: titoli dei riquadri blog/YouTube non escono dal riquadro */
+@media (max-width: 600px) {
+  .yt-text { padding: 2rem 1.2rem; }
+  .yt-text h3 { font-size: clamp(2rem, 11vw, 2.8rem); overflow-wrap: anywhere; }
+  .yt-sub { font-size: 1.1rem; }
+}
