@@ -8,7 +8,7 @@ PAGINE = ['index.html', 'libri.html', 'arte.html', 'blog.html', 'contatti.html']
 LUNGHE = {
  'en': {
   'Lié Larousse, scrittrice. Libri, racconti dal giardino e Libroarbitrio, il tempo di un tè con Lié.': 'Lié Larousse, writer. Books, stories from the garden and Libroarbitrio, tea time with Lié.',
-  'Ci sono luoghi dentro di noi in cui il tempo': 'There are places within us where time',
+  'Ci sono luoghi dentro di noi dove il tempo': 'There are places within us where time',
   'per fare spazio alla': 'to make room for',
   'Lié Larousse abita esattamente lì, tra i ritmi della terra, la magia delle piccole cose e la profondità dei legami invisibili. Scrittrice di romanzi e racconti, poetessa, professionista e ricercatrice nei campi della psicologia e della botanica, Lié coltiva dal 2012 il suo spazio digitale':
    'Lié Larousse lives exactly there, among the rhythms of the earth, the magic of small things and the depth of invisible bonds. A novelist and short-story writer, a poet, a practitioner and researcher in psychology and botany, since 2012 Lié has nurtured her digital space',
@@ -152,7 +152,7 @@ LUNGHE = {
  },
  'fr': {
   'Lié Larousse, scrittrice. Libri, racconti dal giardino e Libroarbitrio, il tempo di un tè con Lié.': 'Lié Larousse, écrivaine. Livres, récits du jardin et Libroarbitrio, le temps d’un thé avec Lié.',
-  'Ci sono luoghi dentro di noi in cui il tempo': 'Il existe des lieux en nous où le temps',
+  'Ci sono luoghi dentro di noi dove il tempo': 'Il existe des lieux en nous où le temps',
   'per fare spazio alla': 'pour faire place à la',
   'Lié Larousse abita esattamente lì, tra i ritmi della terra, la magia delle piccole cose e la profondità dei legami invisibili. Scrittrice di romanzi e racconti, poetessa, professionista e ricercatrice nei campi della psicologia e della botanica, Lié coltiva dal 2012 il suo spazio digitale':
    'Lié Larousse habite exactement là, entre les rythmes de la terre, la magie des petites choses et la profondeur des liens invisibles. Romancière et nouvelliste, poétesse, professionnelle et chercheuse dans les domaines de la psychologie et de la botanique, Lié cultive depuis 2012 son espace numérique',
