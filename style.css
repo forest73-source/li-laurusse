@@ -610,6 +610,8 @@ a.link-nome:hover { color: var(--papavero); }
 .arte-citazione strong { font-weight: 600; color: var(--rame); }
 .arte-citazione .virgolette { font-size: 5.5rem; }
 .arte-intro > p { margin-bottom: 1.1rem; }
+.libri-intro { margin-bottom: 3.5rem; }
+.libri-intro .arte-citazione { margin: 0; }
 .arte-intro strong { font-weight: 600; color: var(--rame); }
 
 .tesori-titolo { text-align: center; font-size: clamp(2.6rem, 5vw, 3.6rem); margin-bottom: 2rem; }

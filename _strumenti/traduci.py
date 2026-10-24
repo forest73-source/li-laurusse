@@ -8,6 +8,7 @@ PAGINE = ['index.html', 'libri.html', 'arte.html', 'blog.html', 'contatti.html']
 LUNGHE = {
  'en': {
   'Lié Larousse, scrittrice. Libri, racconti dal giardino e Libroarbitrio, il tempo di un tè con Lié.': 'Lié Larousse, writer. Books, stories from the garden and Libroarbitrio, tea time with Lié.',
+  '«Sono a servizio della parola di Anima. La sua scrittura e le storie che narriamo assieme non appartengono solo a noi che le tracciamo, ma sono un varco aperto verso il cuore di chiunque sappia mettersi in ascolto.»': '“I am in the service of the word of Soul. Its writing and the stories we tell together do not belong only to us who trace them, but are an open gateway to the heart of anyone who knows how to listen.”',
   'Ci sono luoghi dentro di noi dove il tempo': 'There are places within us where time',
   'per fare spazio alla': 'to make room for',
   'Lié Larousse abita esattamente lì, tra i ritmi della terra, la magia delle piccole cose e la profondità dei legami invisibili. Scrittrice di romanzi e racconti, poetessa, professionista e ricercatrice nei campi della psicologia e della botanica, Lié coltiva dal 2012 il suo spazio digitale':
@@ -151,6 +152,7 @@ LUNGHE = {
  },
  'fr': {
   'Lié Larousse, scrittrice. Libri, racconti dal giardino e Libroarbitrio, il tempo di un tè con Lié.': 'Lié Larousse, écrivaine. Livres, récits du jardin et Libroarbitrio, le temps d’un thé avec Lié.',
+  '«Sono a servizio della parola di Anima. La sua scrittura e le storie che narriamo assieme non appartengono solo a noi che le tracciamo, ma sono un varco aperto verso il cuore di chiunque sappia mettersi in ascolto.»': '« Je suis au service de la parole de l’Âme. Son écriture et les histoires que nous racontons ensemble n’appartiennent pas seulement à nous qui les traçons, mais sont un passage ouvert vers le cœur de quiconque sait se mettre à l’écoute. »',
   'Ci sono luoghi dentro di noi dove il tempo': 'Il existe des lieux en nous où le temps',
   'per fare spazio alla': 'pour faire place à la',
   'Lié Larousse abita esattamente lì, tra i ritmi della terra, la magia delle piccole cose e la profondità dei legami invisibili. Scrittrice di romanzi e racconti, poetessa, professionista e ricercatrice nei campi della psicologia e della botanica, Lié coltiva dal 2012 il suo spazio digitale':
