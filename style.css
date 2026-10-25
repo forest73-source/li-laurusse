@@ -692,3 +692,7 @@ dialog.trama:focus, dialog.trama:focus-visible { outline: none; }
 @media (max-width: 860px) {
   .youtube .yt-thumb, .youtube.youtube-rev .yt-thumb, .youtube:not(.youtube-rev) .yt-thumb { order: 2; }
 }
+
+/* Blog: frase di apertura con le virgolette rosse */
+.virg-rossa { color: var(--papavero); font-style: normal; font-weight: 600; }
+.blog-intro .arte-citazione { text-wrap: pretty; }
